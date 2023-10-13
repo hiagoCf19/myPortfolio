@@ -23,13 +23,13 @@ const InputStyle = styled.input`
   };
   box-shadow:${({ themestate }) =>
     themestate
-      ? ' 0 0 12px #000000, 0 0 0 .15vw transparent'
-      : ' 0 0 12px #4a00e0, 0 0 0 .15vw transparent'
+      ? ' 0 0 12px #000000, 0 0 0 '
+      : ' 0 0 12px #4a00e0, 0 0 0 '
   };
   -webkit-box-shadow:${({ themestate }) =>
     themestate
-      ? ' 0 0 12px #000000, 0 0 0 .15vw transparent'
-      : ' 0 0 12px #4a00e0, 0 0 0 .15vw transparent'
+      ? ' 0 0 12px #000000, 0 0 0'
+      : ' 0 0 12px #4a00e0, 0 0 0'
   };
 
   border-radius: 6px;
@@ -48,8 +48,8 @@ const InputStyle = styled.input`
 &:hover {
   box-shadow:  ${({ themestate }) =>
     themestate
-      ? '  0 0 0 .15vw #6c7161'
-      : ' 0 0 0 .15vw #8d2de287'
+      ? '  0 0 0 2px #6c7161'
+      : ' 0 0 0 2px #8d2de287'
   };
 
 }
@@ -57,8 +57,8 @@ const InputStyle = styled.input`
 &:focus {
   box-shadow:  ${({ themestate }) =>
     themestate
-      ? '  0 0 0 .15vw #000'
-      : ' 0 0 0 .15vw #4a00e0'
+      ? '  0 0 0 2px #000'
+      : ' 0 0 0 2px #4a00e0'
   };
 }
 
@@ -78,8 +78,8 @@ const TextAreaStyle = styled.textarea`
   };
   box-shadow:${({ themestate }) =>
     themestate
-      ? ' 0 0 12px #000000, 0 0 0 .15vw transparent'
-      : ' 0 0 12px #4a00e0, 0 0 0 .15vw transparent'
+      ? ' 0 0 12px #000000, 0 0 0'
+      : ' 0 0 12px #4a00e0, 0 0 0'
   };
   
   
@@ -101,16 +101,16 @@ const TextAreaStyle = styled.textarea`
 &:hover {
   box-shadow: ${({ themestate }) =>
     themestate
-      ? '  0 0 0 .15vw #6c7161'
-      : ' 0 0 0 .15vw #8d2de287'
+      ? '  0 0 0 2px #6c7161'
+      : ' 0 0 0 2px #8d2de287'
   };
 }
 
 &:focus {
   box-shadow:  ${({ themestate }) =>
     themestate
-      ? '  0 0 0 .15vw #000'
-      : ' 0 0 0 .15vw #4a00e0'
+      ? '  0 0 0 2px #000'
+      : ' 0 0 0 2px #4a00e0'
   };
 }
 `

@@ -47,8 +47,10 @@ const Welcome = () => {
         </div>
         {/* BANNER / MINHA FOTO */}
         <div className=" sm:flex-1 flex sm:flex-col justify-center sm:mt-0 mt-[220px] items-center  ">
+          {/* MINHA LOGO */}
           <img src={themeState === false ? 'publicimgs/banner2.svg' : 'publicimgs/bannerThemeL.svg'} alt="Minha Foto" className="anima sm:w-[650px] sm:h-[600px] w-[400px] sm:rounded-lg  ml-[-30px] hidden sm:block" />
-          <div className={`sm:w-[650px] sm:h-[650px] sm:rounded-lg w-[220px] h-[220px] ml-[-30px] sm:mt-[40px] sm:hidden rounded-full border-[4px] border-solid flex items-center ${themeState === false ? 'border-[#9a34f4] shadow-xl shadow-[#9a34f47c] ' : 'border-[#010002] shadow-xl shadow-[#29282b] '}`}>
+          {/* MINHA FOTO */}
+          <div className={`sm:w-[650px] sm:h-[650px] sm:rounded-lg w-[220px] h-[220px] sm:mt-[40px] sm:hidden rounded-full border-[4px] border-solid flex  items-center ${themeState === false ? 'border-[#9a34f4] shadow-xl shadow-[#9a34f47c] ' : 'border-[#010002] shadow-xl shadow-[#29282b] '}`}>
             <img src="/publicimgs/eu2.jpeg" className={`rounded-full h-full w-full`} />
           </div>
 

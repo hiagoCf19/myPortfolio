@@ -94,7 +94,7 @@ const ToggleTheme = () => {
         />
         <span ></span>
       </LabelTheme>
-      {themeState ? console.log('dia') : console.log('noite')}
+
     </>
 
 
