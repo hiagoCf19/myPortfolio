@@ -109,8 +109,8 @@ const TextAreaStyle = styled.textarea`
 &:focus {
   box-shadow:  ${({ themestate }) =>
     themestate
-      ? '  0 0 0 2px #000'
-      : ' 0 0 0 2px #4a00e0'
+      ? '  0 0 0 .15vw #000'
+      : ' 0 0 0 .15 #4a00e0'
   };
 }
 `
