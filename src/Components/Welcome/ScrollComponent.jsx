@@ -12,11 +12,7 @@ const ScrollStyle = styled.button`
   justify-content: center;
   background-color: transparent;
   border: none;
-  outline:  ${({ themestate }) =>
-    themestate
-      ? ' 2px solid #000000'
-      : ' 2px solid #4a00e0'
-  }; 
+ 
   box-shadow: ${({ themestate }) =>
     themestate
       ? '0px 0px 12px #000000'

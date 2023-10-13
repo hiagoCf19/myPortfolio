@@ -48,12 +48,14 @@ table {
   ::-webkit-scrollbar {
     width: 6px;
     
+    
     /* Largura da barra de rolagem */
 }
 ::-webkit-scrollbar-thumb {
     background-color: #6980ff52;
     border-radius: 22px;
 }
+
   
 	.roboto{
 		font-family: 'Roboto', sans-serif;

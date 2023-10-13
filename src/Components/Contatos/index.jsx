@@ -26,6 +26,12 @@ const InputStyle = styled.input`
       ? ' 0 0 12px #000000, 0 0 0 .15vw transparent'
       : ' 0 0 12px #4a00e0, 0 0 0 .15vw transparent'
   };
+  -webkit-box-shadow:${({ themestate }) =>
+    themestate
+      ? ' 0 0 12px #000000, 0 0 0 .15vw transparent'
+      : ' 0 0 12px #4a00e0, 0 0 0 .15vw transparent'
+  };
+
   border-radius: 6px;
   border: none;
   outline: none;
@@ -45,6 +51,7 @@ const InputStyle = styled.input`
       ? '  0 0 0 .15vw #6c7161'
       : ' 0 0 0 .15vw #8d2de287'
   };
+
 }
 
 &:focus {

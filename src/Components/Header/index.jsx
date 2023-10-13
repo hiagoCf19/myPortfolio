@@ -22,7 +22,7 @@ const HeaderCpn = () => {
               </div>
             </div>
           </nav>
-          <div className={`sm:w-ful w-[100%] h-[2px] ${themeState === false ? 'bg-gradient-to-r from-[#8e2de2] to-[#4a00e0]' : 'bg-gradient-to-r from-[#000000] to-[#6c7161]'}`} />
+          <div className={`sm:w-ful w-[200%] h-[2px] ${themeState === false ? 'bg-gradient-to-r from-[#8e2de2] to-[#4a00e0]' : 'bg-gradient-to-r from-[#000000] to-[#6c7161]'}`} />
         </header>
       </section>
       <div className="h-[64px]"></div>
