@@ -45,9 +45,12 @@ const SobreMim = () => {
       </div>
 
       <Qualificacao />
-      <div className="mt-8 flex justify-center  sm:mr-16">
+      <a
+        href="https://drive.google.com/file/d/1z1yE76W2oDQxJxU5mOs_3lKrAgjOgV8l/view?usp=drive_link" className="mt-8 flex justify-center  sm:mr-16"
+        target="_blank"
+      >
         <CurriculoIcon content={'CURRÍCULO'} />
-      </div>
+      </a>
     </section >
   )
 }
