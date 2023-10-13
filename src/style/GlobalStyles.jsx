@@ -1,0 +1,104 @@
+// GlobalStyles.jsx
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+  ::-webkit-scrollbar {
+    width: 6px;
+    
+    /* Largura da barra de rolagem */
+}
+::-webkit-scrollbar-thumb {
+    background-color: #6980ff52;
+    border-radius: 22px;
+}
+  
+	.roboto{
+		font-family: 'Roboto', sans-serif;
+	}
+	.play{
+		font-family: 'Play', sans-serif;
+	}
+	
+	
+.anima {
+  animation: subirDescer 2s infinite alternate;
+}
+
+@keyframes subirDescer {
+  0% {
+    transform: translateY(0); 
+  }
+  100% {
+    transform: translateY(-20px); 
+  }
+}
+.animaR {
+  animation: direita 1s infinite alternate;
+}
+
+@keyframes direita {
+  0% {
+    transform: translateY(0); 
+  }
+  100% {
+    transform: translateX(-5px); 
+  }
+}
+.animaL {
+  animation: esquerda 1s infinite alternate;
+}
+
+@keyframes esquerda {
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(5px); 
+  }
+}
+`;
+
+export default GlobalStyle;
