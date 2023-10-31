@@ -9,11 +9,11 @@ const Welcome = () => {
   const { themeState } = useContext(temaCtx);
   return (
     <section
-      className=" sm:p-6 px-4  mt-[-65px] flex flex-col gap-8"
+      className=" px-4  mt-[-65px] flex flex-col gap-8"
       id="Seja-Bem-Vindo"
     >
-      <div className="flex  h-[100vh] box-content  sm:gap-28 flex-col-reverse sm:flex-row mt-[-90px] sm:mt-2 overflow-x-hidden">
-        <div className="w-min-max flex-1 flex flex-col gap-12 justify-center items-center border">
+      <div className="flex  box-content gap-16  flex-col-reverse sm:flex-row mt-[-90px] sm:mt-2 overflow-x-hidden">
+        <div className="w-min-max flex-1 flex flex-col gap-12 justify-center items-center border ml-8 ">
           {/* MEUS DADOS PESSOAIS */}
           <div className="flex flex-col ml-[-50px] gap-6 sm:gap-0 mt-[-42px]">
             <div>
@@ -75,7 +75,7 @@ const Welcome = () => {
                 : "publicimgs/bannerThemeL.svg"
             }
             alt="Minha Foto"
-            className="anima sm:w-[650px] sm:h-[600px] w-[400px] sm:rounded-lg  ml-[-30px] hidden sm:block"
+            className="anima sm:w-[750px] sm:h-[600px] w-[400px] sm:rounded-lg  ml-[-30px] hidden sm:block "
           />
           {/* MINHA FOTO */}
           <div
@@ -91,9 +91,6 @@ const Welcome = () => {
             />
           </div>
         </div>
-      </div>
-      <div className="flex justify-center sm:mt-[-180px] mt-[-50px]  ">
-        <ScroolCpn />
       </div>
     </section>
   );

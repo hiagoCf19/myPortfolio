@@ -12,6 +12,7 @@ import GlobalStyle from "../../style/GlobalStyles";
 import temaCtx from "../../Context/context";
 import Dark from "../../style/darkTheme";
 import Light from "../../style/lightTheme";
+import ScroolCpn from "../../Components/Welcome/ScrollComponent";
 const Home = () => {
   const { themeState } = useContext(temaCtx);
   return (
@@ -20,8 +21,9 @@ const Home = () => {
 
       {themeState === false ? <Dark /> : <Light />}
       <HeaderCpn />
-      <div className="sm:flex flex-col sm:gap-[120px] justify-center items-center ">
+      <div className="sm:flex flex-col sm:gap-[100px] justify-center items-center ">
         <Welcome />
+        <ScroolCpn />
         <SobreMim />
         <Habilidades />
         <Projetos />
