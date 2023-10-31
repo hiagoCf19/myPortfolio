@@ -119,10 +119,10 @@ const Projetos = () => {
                           className="animaL sm:hidden"
                           onClick={next}
                         />
-                        <CurriculoIcon
-                          content={"VER PROJETO"}
-                          link={projeto.link}
-                        />
+                        <a href={projeto.link} target="_blank">
+                          <CurriculoIcon content={"VER PROJETO"} />
+                        </a>
+
                         <MdOutlineArrowForwardIos
                           size={30}
                           color={`${
