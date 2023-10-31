@@ -246,10 +246,7 @@ const Contatos = () => {
               </div>
               {/* Escreva sua mensagem */}
               <div className=" sm:w-[410px] flex flex-col gap-4 ">
-                <label
-                  htmlFor="mensagem"
-                  className="ml-10 sm:ml-0 mt-4 sm:mt-4"
-                >
+                <label htmlFor="mensagem" className=" mt-4 sm:mt-4">
                   {" "}
                   Escreva sua mensagem:
                 </label>
