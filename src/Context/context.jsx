@@ -2,7 +2,7 @@ import { createContext, useContext, useState } from "react";
 
 const temaCtx = createContext();
 export const useTheme = () => {
-  return useContext(temaCtx)
+  return useContext(temaCtx);
 };
 export const TemaProvider = ({ children }) => {
   const [themeState, setthemeState] = useState(false);
@@ -10,6 +10,6 @@ export const TemaProvider = ({ children }) => {
     <temaCtx.Provider value={{ themeState, setthemeState }}>
       {children}
     </temaCtx.Provider>
-  )
-}
-export default temaCtx
+  );
+};
+export default temaCtx;

@@ -9,7 +9,7 @@ const NavCpn = ({ ancora, content }) => {
       <a
         href={ancora}
         className={`${
-          themeState === false
+          themeState === "false"
             ? " hover:text-transparent bg-clip-text bg-gradient-to-r from-[#8e2de2] to-[#4a00e0] "
             : "hover:text-transparent bg-clip-text bg-gradient-to-r from-[#000000] to-[#6c7161] "
         } hidden sm:block`}

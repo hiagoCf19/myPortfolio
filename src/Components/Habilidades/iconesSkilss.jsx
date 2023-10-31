@@ -40,7 +40,9 @@ const Icones = () => {
   ];
   return (
     <div className="flex justify-center ">
-      <div className=" sm:ml-8 ml-3  flex sm:gap-10 gap-8 sm:justify-normal justify-center flex-wrap">
+      <div
+        className={` sm:ml-8 ml-3  flex sm:gap-10 gap-8 sm:justify-normal  flex-wrap justify-center`}
+      >
         {cards.map((hab, i) => (
           <div
             key={i}

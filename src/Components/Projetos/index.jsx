@@ -37,7 +37,11 @@ const Projetos = () => {
       setProjetoExibido(projetoExibido + 1);
     }
   };
-
+  setTimeout(() => {
+    projetoExibido < 1
+      ? setProjetoExibido(projetoExibido + 1)
+      : setProjetoExibido(0);
+  }, 8000);
   return (
     <section className="pt-28" id="Projetos">
       <Titulo title={"Projetos"} subTitle={"O que eu fiz"} />
@@ -69,6 +73,26 @@ const Projetos = () => {
                     className="sm:w-[600px] sm:h-[350px] w-[350px] sm:rounded-2xl rounded-lg"
                   />
                 </div>
+                <div className="sm:hidden">
+                  <div className="flex justify-center items-center gap-2">
+                    {projetos.map((not, i) => (
+                      <div key={i}>
+                        {projetoExibido === i ? (
+                          <div
+                            className={`h-3 w-3 rounded-full ${
+                              themeState === false
+                                ? "bg-gradient-to-t from-[#8e2de2] to-[#4a00e0]"
+                                : "bg-gradient-to-t from-[#000000] to-[#6c7161]"
+                            }`}
+                          ></div>
+                        ) : (
+                          <div className="h-2 w-2 bg-[#a7a7a75c] rounded-full"></div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
                 <div className=" flex flex-col gap-6   sm:w-[300px]">
                   <h1 className="text-center font-semibold text-[20px] sm:text-[24px]">
                     {" "}
@@ -125,7 +149,7 @@ const Projetos = () => {
       {/* CIRCULOS PARA INDICAR NAVEGAÇÃO LATERAL */}
       <div className="flex py-6 justify-center items-center gap-2">
         {projetos.map((not, i) => (
-          <div key={i}>
+          <div key={i} className="hidden sm:block">
             {projetoExibido === i ? (
               <div
                 className={`h-3 w-3 rounded-full ${
