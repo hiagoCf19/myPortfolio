@@ -184,7 +184,7 @@ const Contatos = () => {
       <Titulo title={"Contatos"} subTitle={"entre em contato"} />
 
       <div className="flex justify-center items-center">
-        <div className="w-[800px] flex flex-col-reverse sm:flex-row">
+        <div className="flex flex-col-reverse sm:flex-row">
           <div className="sm:w-[300px] flex flex-col gap-8 my-8 sm:ml-0 mx-12 sm:px-0">
             <ContatosCpn
               icon={

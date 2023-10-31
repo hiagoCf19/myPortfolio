@@ -1,17 +1,19 @@
-import Titulo from "../Titulo"
-import Icones from "./iconesSkilss"
+import Titulo from "../Titulo";
+import Icones from "./iconesSkilss";
 
 const Habilidades = () => {
   return (
     <>
-      <section className="mx-6 sm:mx-[10.5rem]  pt-28" id="Habilidades">
+      <section
+        className="mx-6 flex flex-col justify-center pt-28"
+        id="Habilidades"
+      >
         <div>
-          <Titulo title={'Habilidades'} subTitle={'O que eu sei'} />
+          <Titulo title={"Habilidades"} subTitle={"O que eu sei"} />
         </div>
         <Icones />
-      </section >
+      </section>
     </>
-
-  )
-}
-export default Habilidades
+  );
+};
+export default Habilidades;

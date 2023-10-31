@@ -1,4 +1,4 @@
-    import { useContext } from "react";
+import { useContext } from "react";
 import ToggleTheme from "./Theme";
 import NavCpn from "./navegationsCpn";
 import temaCtx from "../../Context/context";
@@ -9,20 +9,36 @@ const HeaderCpn = () => {
   return (
     <>
       <section>
-        <header className={`sm:w-full border-gradient fixed z-20 ${themeState === false ? 'headerDark' : 'headerLight'}`}>
-          <nav className="flex justify-between sm:p-6 py-6 px-4 mr-8 sm:px-[10.5rem] items-center ">
-            <h1 className={` w-[150px] text-[1.3rem] font-bold ${themeState === false ? 'text-[#f5f5f5]' : 'text-[#312f2f]'}`}>Hiago Ferreira</h1>
+        <header
+          className={`sm:w-full border-gradient fixed z-20 flex flex-col justify-center ${
+            themeState === false ? "headerDark" : "headerLight"
+          }`}
+        >
+          <nav className="flex justify-between sm:p-6 py-6 px-4 mr-8 items-center ">
+            <h1
+              className={` w-[150px] text-[1.3rem] font-bold ${
+                themeState === false ? "text-[#f5f5f5]" : "text-[#312f2f]"
+              }`}
+            >
+              Hiago Ferreira
+            </h1>
             <div className="flex items-center gap-8 text-[20px]">
-              <NavCpn ancora={'#sobre-mim'} content={'Sobre mim'} />
-              <NavCpn ancora={'#Habilidades'} content={'Habilidades'} />
-              <NavCpn ancora={'#Projetos'} content={'Projetos'} />
-              <NavCpn ancora={'#Contatos'} content={'Contatos'} />
+              <NavCpn ancora={"#sobre-mim"} content={"Sobre mim"} />
+              <NavCpn ancora={"#Habilidades"} content={"Habilidades"} />
+              <NavCpn ancora={"#Projetos"} content={"Projetos"} />
+              <NavCpn ancora={"#Contatos"} content={"Contatos"} />
               <div>
                 <ToggleTheme />
               </div>
             </div>
           </nav>
-          <div className={`sm:w-full w-[200%] h-[2px] ${themeState === false ? 'bg-gradient-to-r from-[#8e2de2] to-[#4a00e0]' : 'bg-gradient-to-r from-[#000000] to-[#6c7161]'}`} />
+          <div
+            className={`sm:w-full w-[200%] h-[2px] ${
+              themeState === false
+                ? "bg-gradient-to-r from-[#8e2de2] to-[#4a00e0]"
+                : "bg-gradient-to-r from-[#000000] to-[#6c7161]"
+            }`}
+          />
         </header>
       </section>
       <div className="h-[64px]"></div>
