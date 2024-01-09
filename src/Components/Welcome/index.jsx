@@ -12,7 +12,7 @@ const Welcome = () => {
       className=" px-4  mt-[-65px] flex flex-col gap-8"
       id="Seja-Bem-Vindo"
     >
-      <div className="flex  box-content gap-16  flex-col-reverse sm:flex-row mt-[-90px] sm:mt-2 overflow-x-hidden">
+      <div className="flex  box-content sm:gap-[20%] gap-16 flex-col-reverse sm:flex-row mt-[-90px] sm:mt-2 overflow-x-hidden">
         <div className="w-min-max flex-1 flex flex-col gap-12 justify-center items-center border ml-8 ">
           {/* MEUS DADOS PESSOAIS */}
           <div className="flex flex-col ml-[-50px] gap-6 sm:gap-0 mt-[-42px]">
@@ -50,7 +50,7 @@ const Welcome = () => {
           </div>
 
           {/* MEUS ICONES PERSONALIZADOS */}
-          <div className="flex sm:w-[400px] w-[300px] gap-6 sm:ml-[-60px]">
+          <div className="flex sm:w-[400px] w-[300px] gap-6 sm:ml-[-60px] py-3">
             <a href="https://github.com/hiagoCf19" target="_blank">
               <GithubIcon />
             </a>
