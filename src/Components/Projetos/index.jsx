@@ -25,6 +25,13 @@ const Projetos = () => {
         " Este foi um dos meus primeiros projetos. Desenvolvido com HTML e CSS ele tem o objetivo de servir como uma referencia para novos fãs da série Bleach. O projeto visa trazer um breve resumo da história das temporadas da série animada.",
       link: "https://bleach-guia.vercel.app/",
     },
+    {
+      nome: "TsStore",
+      foto: "/publicimgs/tsStore-preview.png",
+      descricao:
+        "TsStore é uma aplicação de loja online construída utilizando TypeScript e React. Esta aplicação oferece um sistema robusto de login, um banco de dados para armazenar os dados do usuário e funcionalidades essenciais para uma experiência de compra completa.",
+      link: "https://ts-store-sigma.vercel.app/",
+    },
   ];
   const projeto = projetos[projetoExibido];
   const next = () => {
@@ -38,7 +45,7 @@ const Projetos = () => {
     }
   };
   setTimeout(() => {
-    projetoExibido < 1
+    projetoExibido < 2
       ? setProjetoExibido(projetoExibido + 1)
       : setProjetoExibido(0);
   }, 8000);
