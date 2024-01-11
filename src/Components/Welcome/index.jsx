@@ -55,7 +55,7 @@ const Welcome = () => {
               <GithubIcon />
             </a>
             <a
-              href="https://www.linkedin.com/in/hiago-celmo-ferreira-de-jesus-6a5306230/"
+              href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
               target="_blank"
             >
               <LinkedinIcon />
