@@ -126,7 +126,7 @@ const Projetos = () => {
                           className="animaL sm:hidden"
                           onClick={next}
                         />
-                        <a href={projeto.link} target="_blank">
+                        <a href={projeto.link} target="_blank" rel="noreferrer">
                           <CurriculoIcon content={"VER PROJETO"} />
                         </a>
 

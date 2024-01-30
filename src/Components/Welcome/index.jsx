@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import temaCtx from "../../Context/context";
 import TypingEffect from "../EfeitoDigitação";
-import ScroolCpn from "./ScrollComponent";
 import { GithubIcon, LinkedinIcon, WhatsAppIcon } from "./Socialicons";
 import Typing from "react-typing-effect";
 
@@ -9,7 +8,7 @@ const Welcome = () => {
   const { themeState } = useContext(temaCtx);
   return (
     <section
-      className=" px-4  mt-[-65px] flex flex-col gap-8"
+      className=" px-4  sm:mt-[65px] mt-[-65px] flex flex-col gap-8"
       id="Seja-Bem-Vindo"
     >
       <div className="flex  box-content sm:gap-[20%] gap-16 flex-col-reverse sm:flex-row mt-[-90px] sm:mt-2 overflow-x-hidden">
@@ -51,16 +50,25 @@ const Welcome = () => {
 
           {/* MEUS ICONES PERSONALIZADOS */}
           <div className="flex sm:w-[400px] w-[300px] gap-6 sm:ml-[-60px] py-3">
-            <a href="https://github.com/hiagoCf19" target="_blank">
+            <a
+              href="https://github.com/hiagoCf19"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GithubIcon />
             </a>
             <a
               href="https://www.linkedin.com/in/dev-hiago79216/"
               target="_blank"
+              rel="noreferrer"
             >
               <LinkedinIcon />
             </a>
-            <a href="https://wa.me/5531982033698" target="_blank">
+            <a
+              href="https://wa.me/5531982033698"
+              target="_blank"
+              rel="noreferrer"
+            >
               <WhatsAppIcon />
             </a>
           </div>
