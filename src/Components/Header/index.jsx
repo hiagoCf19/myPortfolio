@@ -10,11 +10,11 @@ const HeaderCpn = () => {
     <>
       <section>
         <header
-          className={`sm:w-full border-gradient fixed z-20 flex flex-col justify-center ${
+          className={`w-full border-gradient fixed z-20 flex flex-col justify-center ${
             themeState === false ? "headerDark" : "headerLight"
           }`}
         >
-          <nav className="flex justify-between sm:p-6 py-6 px-4 mr-8 items-center ">
+          <nav className="flex justify-between sm:p-6 py-6 px-4 items-center ">
             <h1
               className={` w-[150px] text-[1.3rem] font-bold ${
                 themeState === false ? "text-[#f5f5f5]" : "text-[#312f2f]"

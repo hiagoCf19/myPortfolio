@@ -59,7 +59,7 @@ const CurriculoStyle = styled.div`
   }
 
   &:hover::before {
-    filter: blur(20px);
+    filter: blur(6px);
   }
   &:active {
     background: ${({ themestate }) =>
