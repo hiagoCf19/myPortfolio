@@ -12,7 +12,7 @@ const FooterCpn = () => {
             : "bg-gradient-to-r from-[#000000] to-[#6c7161]"
         } bg-white`}
       ></div>
-      <div className="flex justify-center p-6 text-[18px]">
+      <div className="flex justify-center p-6 text-[18px] font-bold">
         Hiago C. Ferreira &#9400;
       </div>
     </footer>

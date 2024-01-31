@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import styled from "styled-components";
-import temaCtx from "../../Context/context";
+import temaCtx from "../Context/context";
+import { PrimaryLig } from "@/style/lightTheme";
+import { PrimaryDark, SecondaryDark } from "@/style/darkTheme";
 
 const ScrollStyle = styled.button`
   width: 30px;
@@ -13,7 +15,9 @@ const ScrollStyle = styled.button`
   border: none;
 
   box-shadow: ${({ themestate }) =>
-    themestate ? "0px 0px 12px #000000" : "0px 0px 10px #8e2de2"};
+    themestate
+      ? `0px 0px 12px ${PrimaryLig}`
+      : `0px 0px 10px ${SecondaryDark}`};
   position: relative;
 
   div {
@@ -21,9 +25,11 @@ const ScrollStyle = styled.button`
     height: 10px;
     border-radius: 10px;
     background-color: ${({ themestate }) =>
-      themestate ? "#000000" : "#4a00e0"};
+      themestate ? PrimaryLig : PrimaryDark};
     box-shadow: ${({ themestate }) =>
-      themestate ? "0px 0px 6px #000000" : "0px 0px 10px #8e2de2"};
+      themestate
+        ? `0px 0px 12px ${PrimaryLig}`
+        : `0px 0px 10px ${SecondaryDark}`};
     animation: scroll_4013 2s linear infinite;
     transform: translateY(40%);
   }
@@ -33,7 +39,7 @@ const ScrollStyle = styled.button`
     font-family: "Play", sans-serif;
     position: absolute;
     top: 140%;
-    color: ${({ themestate }) => (themestate ? "#000000" : "#f5f5f5")};
+    color: ${({ themestate }) => (themestate ? PrimaryLig : PrimaryDark)};
     text-transform: uppercase;
     letter-spacing: 1.5px;
   }
@@ -48,7 +54,7 @@ const ScrollStyle = styled.button`
     }
   }
 `;
-const ScroolCpn = () => {
+const MouseIcon = () => {
   const { themeState } = useContext(temaCtx);
   return (
     <div className="flex justify-center sm:mt-[-180px] mt-10">
@@ -58,4 +64,4 @@ const ScroolCpn = () => {
     </div>
   );
 };
-export default ScroolCpn;
+export default MouseIcon;

@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import temaCtx from "../../Context/context";
+import { GradientDark } from "@/style/darkTheme";
+import { Gradientlig } from "@/style/lightTheme";
 
 const NavCpn = ({ ancora, content }) => {
   const { themeState } = useContext(temaCtx);
@@ -9,9 +11,9 @@ const NavCpn = ({ ancora, content }) => {
       <a
         href={ancora}
         className={`${
-          themeState === "false"
-            ? " hover:text-transparent bg-clip-text bg-gradient-to-r from-[#8e2de2] to-[#4a00e0] "
-            : "hover:text-transparent bg-clip-text bg-gradient-to-r from-[#000000] to-[#6c7161] "
+          themeState === false
+            ? ` hover:text-transparent bg-clip-text ${GradientDark}`
+            : `hover:text-transparent bg-clip-text ${Gradientlig} `
         } hidden sm:block`}
       >
         {content}

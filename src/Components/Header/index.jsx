@@ -2,6 +2,8 @@ import { useContext } from "react";
 import ToggleTheme from "./Theme";
 import NavCpn from "./navegationsCpn";
 import temaCtx from "../../Context/context";
+import { GradientDark } from "@/style/darkTheme";
+import { Gradientlig } from "@/style/lightTheme";
 
 const HeaderCpn = () => {
   const { themeState } = useContext(temaCtx);
@@ -15,11 +17,7 @@ const HeaderCpn = () => {
           }`}
         >
           <nav className="flex justify-between sm:p-6 py-6 px-4 items-center ">
-            <h1
-              className={` w-[150px] text-[1.3rem] font-bold ${
-                themeState === false ? "text-[#f5f5f5]" : "text-[#312f2f]"
-              }`}
-            >
+            <h1 className={` w-[150px] text-[1.3rem] font-bold  `}>
               Hiago Ferreira
             </h1>
             <div className="flex items-center gap-8 text-[20px]">
@@ -34,9 +32,7 @@ const HeaderCpn = () => {
           </nav>
           <div
             className={`sm:w-full w-[200%] h-[2px] ${
-              themeState === false
-                ? "bg-gradient-to-r from-[#8e2de2] to-[#4a00e0]"
-                : "bg-gradient-to-r from-[#000000] to-[#6c7161]"
+              themeState === false ? GradientDark : Gradientlig
             }`}
           />
         </header>

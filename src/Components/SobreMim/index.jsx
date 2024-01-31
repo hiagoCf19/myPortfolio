@@ -4,6 +4,8 @@ import CurriculoIcon from "../../CurriuloIcon";
 import Qualificacao from "./Qualificacao";
 import temaCtx from "../../Context/context";
 import { useContext } from "react";
+import { Gradientlig } from "@/style/lightTheme";
+import { GradientDark } from "@/style/darkTheme";
 
 const SobreMim = () => {
   const { themeState } = useContext(temaCtx);
@@ -30,9 +32,11 @@ const SobreMim = () => {
         <div className="w-[500px] flex flex-col gap-8">
           {/* BORDA GRADIENTE */}
           <h3
-            className={`font-bold ${
-              themeState === false ? "text-[#4a00e0]" : "text-[#6c7161]"
-            } text-[20px]`}
+            className={` font-bold text-[20px] ${
+              themeState === false
+                ? `text-transparent bg-clip-text ${GradientDark} `
+                : `text-transparent bg-clip-text ${Gradientlig} `
+            }`}
           >
             {/* textos */}
             <span
@@ -55,9 +59,7 @@ const SobreMim = () => {
           <div className=" flex gap-4 sm:flex-row flex-col ">
             <div
               className={`sm:h-[320px] sm:w-8 ${
-                themeState === false
-                  ? "bg-gradient-to-t from-[#8e2de2] to-[#4a00e0]"
-                  : "bg-gradient-to-t from-[#000000] to-[#6c7161]"
+                themeState === false ? GradientDark : Gradientlig
               }  w-full h-[4px]`}
             ></div>
 
@@ -86,6 +88,7 @@ const SobreMim = () => {
         href="https://drive.google.com/file/d/1z1yE76W2oDQxJxU5mOs_3lKrAgjOgV8l/view?usp=drive_link"
         className="mt-8 flex justify-center  sm:mr-16"
         target="_blank"
+        rel="noreferrer"
       >
         <CurriculoIcon content={"CURRÍCULO"} />
       </a>

@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import styled from "styled-components";
 import temaCtx from "./Context/context";
+import { PrimaryLig, SecondaryLig } from "./style/lightTheme";
+import { PrimaryDark, SecondaryDark } from "./style/darkTheme";
 
 const CurriculoStyle = styled.div`
   display: flex;
@@ -20,7 +22,7 @@ const CurriculoStyle = styled.div`
   text-align: center;
   background: ${({ themestate }) =>
     themestate
-      ? "linear-gradient(90deg,#000000,#000000,#6c7161,#000000f3)"
+      ? `linear-gradient(90deg, ${SecondaryLig},${PrimaryLig},${SecondaryLig},${PrimaryLig})`
       : " linear-gradient(90deg,#4a00e0,#8e2de2,#bda0ec,#4a00e0);"};
   background-size: 300%;
   border-radius: 8px;
@@ -51,8 +53,8 @@ const CurriculoStyle = styled.div`
     z-index: -1;
     background: ${({ themestate }) =>
       themestate
-        ? "linear-gradient(90deg,#000000,#6c7161,#6c7161,#000000f3)"
-        : " linear-gradient(90deg,#4a00e0,#8e2de2,#bda0ec,#4a00e0);"};
+        ? `linear-gradient(90deg, ${SecondaryLig},${PrimaryLig},${SecondaryLig},${PrimaryLig})`
+        : ` linear-gradient(90deg,${PrimaryDark},${SecondaryDark},${SecondaryDark},${PrimaryDark});`};
     background-size: 400%;
     border-radius: 8px;
     transition: 1s;
@@ -64,8 +66,8 @@ const CurriculoStyle = styled.div`
   &:active {
     background: ${({ themestate }) =>
       themestate
-        ? "linear-gradient(90deg,#000000,#6c7161,#6c7161,#000000f3)"
-        : " linear-gradient(32deg,#ea7fd6,#f441a5,#d0d0d0,#031bf4);"};
+        ? `linear-gradient(90deg, ${SecondaryLig},${PrimaryLig},${SecondaryLig},${PrimaryLig})`
+        : ` linear-gradient(32deg,${PrimaryDark},${SecondaryDark},${PrimaryDark},${SecondaryDark});`};
   }
 `;
 

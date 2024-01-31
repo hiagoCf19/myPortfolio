@@ -6,18 +6,24 @@ import styled from "styled-components";
 import { useContext, useState } from "react";
 import emailjs from "@emailjs/browser";
 import temaCtx from "../../Context/context";
+import { PrimaryLig, SecondaryLig } from "@/style/lightTheme";
+import { PrimaryDark, SecondaryDark } from "@/style/darkTheme";
 
 const InputStyle = styled.input`
   font-style: italic;
   font-weight: 500;
   font-size: 1rem;
-  color: ${({ themestate }) => (themestate ? " rgb(28,28,30)" : "#FFF")};
+  color: ${({ themestate }) => (themestate ? " #000" : "#FFF")};
   background-color: ${({ themestate }) =>
-    themestate ? " #FFF " : "rgb(28,28,30); "};
+    themestate ? " #F5F5F5B2 " : "rgb(28,28,30); "};
   box-shadow: ${({ themestate }) =>
-    themestate ? " 0 0 12px #000000, 0 0 0 " : " 0 0 12px #4a00e0, 0 0 0 "};
+    themestate
+      ? ` 0 0 12px ${SecondaryLig}, 0 0 0 `
+      : `0 0 8px ${PrimaryDark}, 0 0 0 `};
   -webkit-box-shadow: ${({ themestate }) =>
-    themestate ? " 0 0 12px #000000, 0 0 0" : " 0 0 12px #4a00e0, 0 0 0"};
+    themestate
+      ? ` 0 0 12px ${SecondaryLig}, 0 0 0`
+      : `0 0 12px ${PrimaryDark}, 0 0 0`};
 
   border-radius: 6px;
   border: none;
@@ -34,22 +40,30 @@ const InputStyle = styled.input`
 
   &:hover {
     box-shadow: ${({ themestate }) =>
-      themestate ? "  0 0 0 2px #6c7161" : " 0 0 0 2px #8d2de287"};
+      themestate ? `  0 0 0 2px ${PrimaryLig}` : ` 0 0 0 2px ${PrimaryDark}`};
   }
 
   &:focus {
     box-shadow: ${({ themestate }) =>
-      themestate ? "  0 0 0 2px #000" : " 0 0 0 2px #4a00e0"};
+      themestate
+        ? `  0 0 0 2px ${SecondaryLig}`
+        : `0 0 0 2px ${SecondaryLig} `};
   }
 `;
 const TextAreaStyle = styled.textarea`
   font-weight: 500;
   font-size: 1rem;
-  color: ${({ themestate }) => (themestate ? " rgb(28,28,30)" : " #FFF ")};
+  color: ${({ themestate }) => (themestate ? " #000" : "#FFF")};
   background-color: ${({ themestate }) =>
-    themestate ? " #FFF " : "rgb(28,28,30); "};
+    themestate ? " #F5F5F5B2 " : "rgb(28,28,30); "};
   box-shadow: ${({ themestate }) =>
-    themestate ? " 0 0 12px #000000, 0 0 0" : " 0 0 12px #4a00e0, 0 0 0"};
+    themestate
+      ? ` 0 0 12px ${SecondaryLig}, 0 0 0 `
+      : `0 0 12px ${PrimaryDark}, 0 0 0 `};
+  -webkit-box-shadow: ${({ themestate }) =>
+    themestate
+      ? ` 0 0 12px ${SecondaryLig}, 0 0 0`
+      : `0 0 12px ${PrimaryDark}, 0 0 0`};
 
   border-radius: 6px;
   border: none;
@@ -67,12 +81,14 @@ const TextAreaStyle = styled.textarea`
   }
   &:hover {
     box-shadow: ${({ themestate }) =>
-      themestate ? "  0 0 0 2px #6c7161" : " 0 0 0 2px #8d2de287"};
+      themestate ? `  0 0 0 2px ${PrimaryLig}` : ` 0 0 0 2px ${PrimaryDark}`};
   }
 
   &:focus {
     box-shadow: ${({ themestate }) =>
-      themestate ? "  0 0 0 .15vw #000" : " 0 0 0 .15 #4a00e0"};
+      themestate
+        ? `  0 0 0 2px ${SecondaryLig}`
+        : `0 0 0 2px ${SecondaryLig} `};
   }
 `;
 const SubmitStyle = styled.div`
@@ -93,8 +109,8 @@ const SubmitStyle = styled.div`
   text-align: center;
   background: ${({ themestate }) =>
     themestate
-      ? "linear-gradient(90deg,#000000,#000000,#6c7161,#000000f3)"
-      : " linear-gradient(90deg,#4a00e0,#8e2de2,#bda0ec,#4a00e0);"};
+      ? `linear-gradient(90deg, ${SecondaryLig},${PrimaryLig},${SecondaryLig},${PrimaryLig})`
+      : ` linear-gradient(32deg,${PrimaryDark},${SecondaryDark},${PrimaryDark},${SecondaryDark});`};
   background-size: 300%;
   border-radius: 8px;
   z-index: 1;
@@ -124,8 +140,8 @@ const SubmitStyle = styled.div`
     z-index: -1;
     background: ${({ themestate }) =>
       themestate
-        ? "linear-gradient(90deg,#000000,#6c7161,#6c7161,#000000f3)"
-        : " linear-gradient(90deg,#4a00e0,#8e2de2,#bda0ec,#4a00e0);"};
+        ? `linear-gradient(90deg, ${SecondaryLig},${PrimaryLig},${SecondaryLig},${PrimaryLig})`
+        : ` linear-gradient(32deg,${PrimaryDark},${SecondaryDark},${PrimaryDark},${SecondaryDark});`};
     background-size: 400%;
     border-radius: 8px;
     transition: 1s;
@@ -137,8 +153,8 @@ const SubmitStyle = styled.div`
   &:active {
     background: ${({ themestate }) =>
       themestate
-        ? "linear-gradient(90deg,#000000,#6c7161,#6c7161,#000000f3)"
-        : " linear-gradient(32deg,#ea7fd6,#f441a5,#d0d0d0,#031bf4);"};
+        ? `linear-gradient(90deg, ${SecondaryLig},${PrimaryLig},${SecondaryLig},${PrimaryLig})`
+        : ` linear-gradient(32deg,${PrimaryDark},${SecondaryDark},${PrimaryDark},${SecondaryDark});`};
   }
 `;
 
@@ -190,7 +206,7 @@ const Contatos = () => {
               icon={
                 <MdSmartphone
                   size={30}
-                  color={`${themeState === false ? "#4a00e0" : "#000000"}`}
+                  color={`${themeState === false ? PrimaryDark : SecondaryLig}`}
                 />
               }
               title={"Telefone"}
@@ -200,7 +216,7 @@ const Contatos = () => {
               icon={
                 <MdAlternateEmail
                   size={30}
-                  color={`${themeState === false ? "#4a00e0" : "#000000"}`}
+                  color={`${themeState === false ? PrimaryDark : SecondaryLig}`}
                 />
               }
               title={"E-mail"}
@@ -209,7 +225,7 @@ const Contatos = () => {
             <ContatosCpn
               icon={
                 <HiLocationMarker
-                  color={`${themeState === false ? "#4a00e0" : "#000000"}`}
+                  color={`${themeState === false ? PrimaryDark : SecondaryLig}`}
                   size={30}
                 />
               }

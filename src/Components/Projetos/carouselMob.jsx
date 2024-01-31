@@ -17,8 +17,8 @@ export const CarouselMobile = () => {
     <div
       className={` sm:hidden mx-3 border border-solid shadow-lg rounded-[10px] h-full mb-10   ${
         themeState === false
-          ? "border-[#4a00e0]  shadow-[#4a00e0]"
-          : "border-[#FFFFFF]  shadow-[#000000]"
+          ? "border-primaryDark  shadow-primaryDark"
+          : "border-secondaryLig  shadow-secondaryLig"
       }`}
     >
       <div className="overflow-hidden">
@@ -27,12 +27,12 @@ export const CarouselMobile = () => {
             {projetos.map((projeto, i) => (
               <CarouselItem key={i}>
                 <div className="flex flex-col gap-5 p-3">
-                  <img src={projeto.foto} className="rounded-[10px] " alt="" />
+                  <img src={projeto.foto} className="rounded-[6px] " alt="" />
                   <div className=" flex flex-col gap-3 px-2">
                     <h2 className="text-[22px] font-bold text-center">
                       {projeto.nome}
                     </h2>
-                    <p className="text-[1.1rem] leading-5 text-justify">
+                    <p className="leading-loose text-justify text-[18px]">
                       {projeto.descricao}
                     </p>
                   </div>

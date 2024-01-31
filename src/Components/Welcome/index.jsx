@@ -3,6 +3,8 @@ import temaCtx from "../../Context/context";
 import TypingEffect from "../EfeitoDigitação";
 import { GithubIcon, LinkedinIcon, WhatsAppIcon } from "./Socialicons";
 import Typing from "react-typing-effect";
+import { GradientDark, PrimaryDark } from "@/style/darkTheme";
+import { Gradientlig } from "@/style/lightTheme";
 
 const Welcome = () => {
   const { themeState } = useContext(temaCtx);
@@ -23,8 +25,8 @@ const Welcome = () => {
                   className={`
                 ${
                   themeState === false
-                    ? " text-transparent bg-clip-text bg-gradient-to-r from-[#8e2de2] to-[#4a00e0] "
-                    : "text-transparent bg-clip-text bg-gradient-to-r from-[#000000] to-[#6c7161] "
+                    ? `text-transparent bg-clip-text ${GradientDark} `
+                    : `text-transparent bg-clip-text ${Gradientlig} `
                 }
                 
                 `}
@@ -36,8 +38,8 @@ const Welcome = () => {
 
             <span
               className={`text-[20px] ${
-                themeState === false ? "text-[#a7a7a7]" : "text-[#000000]"
-              } font-medium `}
+                themeState === false ? "text-[#a7a7a7]" : "text-[]"
+              } font-bold `}
             >
               {" "}
               <Typing
@@ -77,21 +79,13 @@ const Welcome = () => {
         <div className=" sm:flex-1 flex sm:flex-col justify-center sm:mt-0 mt-[220px] items-center  ">
           {/* MINHA LOGO */}
           <img
-            src={
-              themeState === false
-                ? "publicimgs/banner2.svg"
-                : "publicimgs/bannerThemeL.svg"
-            }
+            src="/publicimgs/Programming-amico.svg"
             alt="Minha Foto"
-            className="anima sm:w-[750px] sm:h-[600px] w-[400px] sm:rounded-lg  ml-[-30px] hidden sm:block "
+            className="anima  sm:h-[600px] w-[900px]  hidden sm:block "
           />
           {/* MINHA FOTO */}
           <div
-            className={`sm:w-[650px] sm:h-[650px] sm:rounded-lg w-[220px] h-[220px] sm:mt-[40px] sm:hidden rounded-full border-[4px] border-solid flex  items-center ${
-              themeState === false
-                ? "border-[#9a34f4] shadow-xl shadow-[#9a34f47c] "
-                : "border-[#010002] shadow-xl shadow-[#29282b] "
-            }`}
+            className={`sm:w-[650px] sm:h-[650px] sm:rounded-lg w-[220px] h-[220px] sm:mt-[40px] sm:hidden rounded-full border-[4px] border-solid border-[${PrimaryDark}] flex  items-center`}
           >
             <img
               src="/publicimgs/eu2.jpeg"

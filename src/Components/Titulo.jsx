@@ -1,6 +1,16 @@
 import styled from "styled-components";
 import temaCtx from "../Context/context";
 import { useContext } from "react";
+import {
+  BackgroundLineLig,
+  PrimaryLig,
+  SecondaryLig,
+} from "@/style/lightTheme";
+import {
+  BackgroundLineDark,
+  PrimaryDark,
+  SecondaryDark,
+} from "@/style/darkTheme";
 
 const BarStyle = styled.div`
   display: flex;
@@ -32,8 +42,8 @@ const BarStyle = styled.div`
     position: absolute;
     background-image: ${({ themestate }) =>
       themestate
-        ? "  linear-gradient(to right, #000000, #6c7161)"
-        : "  linear-gradient(to right, #9a34f4, #4a00e0)"};
+        ? ` linear-gradient(to right, ${PrimaryLig}, ${SecondaryLig})`
+        : `  linear-gradient(to right, ${SecondaryDark}, ${PrimaryDark})`};
     width: 0%;
     height: 100%;
     border-radius: 2px;
@@ -70,7 +80,7 @@ const Titulo = ({ title, subTitle }) => {
         <BarStyle themestate={themeState}>
           <h1
             className={`p-2 z-10 text-lg font-normal ${
-              themeState === false ? "bg-[#01031b]" : "bg-[#F0F0F0]"
+              themeState === false ? BackgroundLineDark : BackgroundLineLig
             }`}
           >
             {" "}
