@@ -20,7 +20,7 @@ const TypingEffect = ({ text, speed }) => {
     };
   }, [iAtual, text, speed]);
 
-  return <span>{textoExibido}</span>;
+  return <span className="">{textoExibido}</span>;
 };
 
 export default TypingEffect;

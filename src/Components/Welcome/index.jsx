@@ -39,7 +39,7 @@ const Welcome = () => {
             <span
               className={`text-[20px] ${
                 themeState === false ? "text-[#a7a7a7]" : "text-[]"
-              } font-bold `}
+              } font-bold pt-3 `}
             >
               {" "}
               <Typing
