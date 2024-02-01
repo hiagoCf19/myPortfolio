@@ -6,7 +6,7 @@ import { SiTailwindcss, SiStyledcomponents } from "react-icons/si";
 import temaCtx from "../../Context/context";
 import { useContext } from "react";
 
-import { CardLig, PrimaryLig, SecondaryLig } from "@/style/lightTheme";
+import { CardLig, SecondaryLig } from "@/style/lightTheme";
 import { CardDark, PrimaryDark } from "@/style/darkTheme";
 const Icones = () => {
   const { themeState } = useContext(temaCtx);

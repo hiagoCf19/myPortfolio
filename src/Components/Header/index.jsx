@@ -17,10 +17,10 @@ const HeaderCpn = () => {
           }`}
         >
           <nav className="flex justify-between sm:p-6 py-6 px-4 items-center ">
-            <h1 className={` w-[150px] text-[1.3rem] font-bold  `}>
+            <h1 className={` sm:w-[150px]  text-[1.3rem] font-bold `}>
               Hiago Ferreira
             </h1>
-            <div className="flex items-center gap-8 text-[20px]">
+            <div className="flex items-center sm:gap-8 text-[20px]">
               <NavCpn ancora={"#sobre-mim"} content={"Sobre mim"} />
               <NavCpn ancora={"#Habilidades"} content={"Habilidades"} />
               <NavCpn ancora={"#Projetos"} content={"Projetos"} />
