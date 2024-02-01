@@ -18,7 +18,7 @@ const Welcome = () => {
           {/* MEUS DADOS PESSOAIS */}
           <div className="flex flex-col ml-[-50px] mt-[-42px]">
             <div>
-              <h1 className="sm:text-[60px] text-[40px] sm:w-[420px] w-[280px] h-[80px] sm:h-[140px] font-bold">
+              <h1 className="sm:text-[60px] text-[35px] sm:w-[420px] w-[280px] h-[80px] sm:h-[140px] font-bold">
                 {" "}
                 Olá, eu sou <br />
                 <strong
