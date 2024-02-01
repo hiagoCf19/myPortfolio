@@ -57,7 +57,7 @@ const ScrollStyle = styled.button`
 const MouseIcon = () => {
   const { themeState } = useContext(temaCtx);
   return (
-    <div className="flex justify-center sm:mt-[-180px] mt-10">
+    <div className="flex justify-center sm:mt-[-180px]">
       <ScrollStyle themestate={themeState}>
         <div> </div>
       </ScrollStyle>

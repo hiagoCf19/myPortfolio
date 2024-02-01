@@ -22,7 +22,7 @@ const Home = () => {
 
       {themeState === false ? <Dark /> : <Light />}
       <HeaderCpn />
-      <div className="sm:flex flex-col sm:gap-[100px] justify-center items-center ">
+      <div className="flex flex-col sm:gap-[150px] gap-20 justify-center sm:items-center ">
         <Welcome />
         <MouseIcon />
         <SobreMim />

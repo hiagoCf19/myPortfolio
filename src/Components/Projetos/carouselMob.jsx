@@ -15,7 +15,7 @@ export const CarouselMobile = () => {
   const projetos = trabalhos;
   return (
     <div
-      className={` sm:hidden mx-3 border border-solid shadow-lg rounded-[10px] h-full mb-10   ${
+      className={` sm:hidden mx-3 border border-solid shadow-lg rounded-[10px] h-full   ${
         themeState === false
           ? "border-primaryDark  shadow-primaryDark"
           : "border-secondaryLig  shadow-secondaryLig"

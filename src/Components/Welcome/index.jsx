@@ -14,11 +14,11 @@ const Welcome = () => {
       id="Seja-Bem-Vindo"
     >
       <div className="flex  box-content sm:gap-[20%] gap-16 flex-col-reverse sm:flex-row mt-[-90px] sm:mt-2 overflow-x-hidden">
-        <div className="w-min-max flex-1 flex flex-col gap-12 justify-center items-center border ml-8 ">
+        <div className="w-min-max flex-1 flex flex-col sm:gap-12 gap-8 justify-center items-center border ml-8 ">
           {/* MEUS DADOS PESSOAIS */}
           <div className="flex flex-col ml-[-50px] mt-[-42px]">
             <div>
-              <h1 className="sm:text-[60px] text-[35px] sm:w-[420px] w-[280px] h-[80px] sm:h-[140px] font-bold">
+              <h1 className="sm:text-[60px] text-[34px] sm:w-[420px] w-[280px] h-[80px] sm:h-[140px] font-bold ">
                 {" "}
                 Olá, eu sou <br />
                 <strong
@@ -39,13 +39,14 @@ const Welcome = () => {
             <span
               className={`text-[20px] ${
                 themeState === false ? "text-[#a7a7a7]" : "text-[]"
-              } font-bold pt-3 `}
+              } font-bold `}
             >
               {" "}
               <Typing
                 speed={100}
                 eraseDelay={999999999}
                 text={["Desenvolvedor Front-end"]}
+                className="py-2"
               />
             </span>
           </div>

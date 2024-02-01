@@ -5,7 +5,7 @@ const Habilidades = () => {
   return (
     <>
       <section
-        className="sm:mx-6 flex flex-col justify-center pt-28"
+        className="sm:mx-6 flex flex-col justify-center"
         id="Habilidades"
       >
         <div>

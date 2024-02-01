@@ -11,7 +11,7 @@ const SobreMim = () => {
   const { themeState } = useContext(temaCtx);
   return (
     <section
-      className="mx-4 sm:mx-0 pt-28 flex flex-col justify-center "
+      className="mx-4 sm:mx-0 flex flex-col justify-center "
       id="sobre-mim"
     >
       <div>

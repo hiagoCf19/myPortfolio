@@ -18,7 +18,7 @@ const BarStyle = styled.div`
   align-items: center;
   justify-content: center;
   gap: 12px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 
   .c1 {
     width: 50%;

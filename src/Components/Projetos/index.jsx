@@ -5,7 +5,7 @@ import { CarouselMobile } from "./carouselMob";
 
 const Projetos = () => {
   return (
-    <section className="pt-28" id="Projetos">
+    <section id="Projetos">
       <Titulo title={"Projetos"} subTitle={"O que eu fiz"} />
       <CarouselCpn />
       <CarouselMobile />

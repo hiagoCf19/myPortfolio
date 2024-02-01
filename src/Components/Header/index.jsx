@@ -3,7 +3,6 @@ import ToggleTheme from "./Theme";
 import NavCpn from "./navegationsCpn";
 import temaCtx from "../../Context/context";
 import { GradientDark } from "@/style/darkTheme";
-import { Gradientlig } from "@/style/lightTheme";
 
 const HeaderCpn = () => {
   const { themeState } = useContext(temaCtx);
@@ -32,7 +31,7 @@ const HeaderCpn = () => {
           </nav>
           <div
             className={`sm:w-full w-[200%] h-[2px] ${
-              themeState === false ? GradientDark : Gradientlig
+              themeState === false ? GradientDark : "bg-secondaryLig"
             }`}
           />
         </header>
