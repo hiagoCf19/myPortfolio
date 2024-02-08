@@ -64,7 +64,7 @@ const SobreMim = () => {
             ></div>
 
             <p
-              className={`flex sm:leading-normal leading-loose text-justify text-[18px] ${
+              className={`flex sm:leading-normal leading-snug text-justify text-[18px] ${
                 themeState === false ? "text-[#ffffff]" : "text-[#000000]"
               }`}
             >
