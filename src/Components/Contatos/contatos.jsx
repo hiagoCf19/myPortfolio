@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import temaCtx from "../../Context/context";
 
+// eslint-disable-next-line react/prop-types
 const ContatosCpn = ({ icon, title, subtitle }) => {
   const { themeState } = useContext(temaCtx);
   return (

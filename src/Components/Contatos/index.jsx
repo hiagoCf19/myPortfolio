@@ -8,6 +8,7 @@ import emailjs from "@emailjs/browser";
 import temaCtx from "../../Context/context";
 import { PrimaryLig, SecondaryLig } from "@/style/lightTheme";
 import { PrimaryDark, SecondaryDark } from "@/style/darkTheme";
+import { Element } from "react-scroll";
 
 const InputStyle = styled.input`
   font-style: italic;
@@ -196,7 +197,7 @@ const Contatos = () => {
     setMensagemEnviada(false);
   }, 8000);
   return (
-    <section id="Contatos">
+    <Element name="contatos" className="sm:pb-44">
       <Titulo title={"Contatos"} subTitle={"entre em contato"} />
 
       <div className="flex justify-center items-center">
@@ -290,7 +291,7 @@ const Contatos = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Element>
   );
 };
 export default Contatos;

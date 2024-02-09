@@ -20,10 +20,10 @@ const HeaderCpn = () => {
               Hiago Ferreira
             </h1>
             <div className="flex items-center sm:gap-8 text-[20px]">
-              <NavCpn ancora={"#sobre-mim"} content={"Sobre mim"} />
-              <NavCpn ancora={"#Habilidades"} content={"Habilidades"} />
-              <NavCpn ancora={"#Projetos"} content={"Projetos"} />
-              <NavCpn ancora={"#Contatos"} content={"Contatos"} />
+              <NavCpn to={"sobre-mim"} content={"Sobre mim"} />
+              <NavCpn to={"habilidades"} content={"Habilidades"} />
+              <NavCpn to={"projetos"} content={"Projetos"} />
+              <NavCpn to={"contatos"} content={"Contatos"} />
               <div>
                 <ToggleTheme />
               </div>

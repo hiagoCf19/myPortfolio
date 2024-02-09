@@ -1,5 +1,5 @@
 // GlobalStyles.jsx
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
@@ -91,6 +91,9 @@ table {
 }
 .animaL {
   animation: esquerda 1s infinite alternate;
+}
+.ativo{
+ color: #6980ff52;
 }
 
 @keyframes esquerda {

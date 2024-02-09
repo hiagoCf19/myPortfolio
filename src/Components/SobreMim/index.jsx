@@ -6,13 +6,14 @@ import temaCtx from "../../Context/context";
 import { useContext } from "react";
 import { Gradientlig } from "@/style/lightTheme";
 import { GradientDark } from "@/style/darkTheme";
+import { Element } from "react-scroll";
 
 const SobreMim = () => {
   const { themeState } = useContext(temaCtx);
   return (
-    <section
+    <Element
       className="mx-4 sm:mx-0 flex flex-col justify-center "
-      id="sobre-mim"
+      name="sobre-mim"
     >
       <div>
         <Titulo title={"Sobre mim"} subTitle={"Quem eu sou ?"} />
@@ -92,7 +93,7 @@ const SobreMim = () => {
       >
         <CurriculoIcon content={"CURRÍCULO"} />
       </a>
-    </section>
+    </Element>
   );
 };
 export default SobreMim;
