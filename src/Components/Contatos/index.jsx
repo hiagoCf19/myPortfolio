@@ -221,7 +221,7 @@ const Contatos = () => {
                 />
               }
               title={"E-mail"}
-              subtitle={"hiagoferreira@id.uff.br"}
+              subtitle={"hiagodeveloperfr@gmail.com"}
             />
             <ContatosCpn
               icon={

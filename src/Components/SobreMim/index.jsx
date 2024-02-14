@@ -86,7 +86,7 @@ const SobreMim = () => {
 
       <Qualificacao />
       <a
-        href="https://drive.google.com/file/d/1z1yE76W2oDQxJxU5mOs_3lKrAgjOgV8l/view?usp=drive_link"
+        href="https://drive.google.com/file/d/1gq0HLwUhDo0zRBC31QSiTPpmEAn-b6wn/view"
         className="mt-8 flex justify-center  sm:mr-16"
         target="_blank"
         rel="noreferrer"

@@ -9,7 +9,7 @@ const Qualificacao = () => {
   return (
     <>
       <div className="mt-4">
-        <Titulo title={"Qualificação"} subTitle={"A estrada até aqui"} />
+        <Titulo title={"Formação"} subTitle={"A estrada até aqui"} />
       </div>
 
       <div className="flex justify-center">
