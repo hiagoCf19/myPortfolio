@@ -10,14 +10,14 @@ export const trabalhos = [
     nome: "Gravador de notas de áudio",
     foto: "/publicimgs/miniNotas.png",
     descricao:
-      "O objetivo principal do projeto é criar um gravador de notas com a capacidade de gravar notas por áudio. Ao longo do desenvolvimento desta aplicação de interface simples, pude aprimorar minhas habilidades no tratamento de acessibilidade. A aplicação foi criada usando Tailwind, Typescript e React.",
+      "O objetivo principal do projeto é criar um gravador de notas com a capacidade de gravar notas por áudio. Ao longo do desenvolvimento desta aplicação de interface simples, pude aprimorar minhas habilidades no tratamento de acessibilidade.",
     link: "https://gravador-de-notas.vercel.app/",
   },
   {
     nome: "Spotify",
     foto: "/publicimgs/miniSpotify.png",
     descricao:
-      "O projeto visa desenvolver um clone do Spotify com uma abordagem que vai além da interface. Foi buscado implementar uma série de funcionalidades presentes no Spotify, incluindo sistema de curtidas de músicas, busca por nome, álbum, playlist e gênero, reprodutor dinâmico, perfis de artistas, entre outras. A aplicação foi construída utilizando tecnologias como React, Typescript, TailwindCSS e a biblioteca de componentes Shadcn.",
+      "O projeto visa desenvolver um clone do Spotify com uma abordagem que vai além da interface. Foi buscado implementar uma série de funcionalidades presentes no Spotify, incluindo sistema de curtidas de músicas, busca por nome, álbum, playlist e gênero, reprodutor dinâmico, perfis de artistas, entre outras.",
     link: "https://spotify-clone-psi-gray.vercel.app/",
   },
 
@@ -25,7 +25,7 @@ export const trabalhos = [
     nome: "HRest",
     foto: "/publicimgs/printP1.png",
     descricao:
-      " Esse projeto visa simplificar o processo de pedidos em restaurantes, oferecendo aos clientes a opção de fazer pedidos online, eliminando a necessidade de ligar para o atendimento telefônico e permitindo que os pedidos sejam enviados diretamente para o WhatsApp da empresa. Para desenvolver esse Projeto utilizei React, Javascript e Tailwind CSS",
+      " Esse projeto visa simplificar o processo de pedidos em restaurantes, oferecendo aos clientes a opção de fazer pedidos online, eliminando a necessidade de ligar para o atendimento telefônico e permitindo que os pedidos sejam enviados diretamente para o WhatsApp da empresa.",
     link: "https://h-rest-react.vercel.app/",
   },
   {
