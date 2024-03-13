@@ -40,7 +40,7 @@ export const CarouselCpn = () => {
                   <img
                     src={projeto.foto}
                     alt=""
-                    className=" flex justify-center items-center w-[50%] p-4  h-[400px] rounded-[20px]"
+                    className=" flex justify-center items-center w-[55%] h-[40vh] mt-12 p-4   rounded-[20px]"
                   />
                   <div className="flex w-full flex-col gap-10 py-5">
                     <h2 className="text-center font-semibold text-[24px]">
