@@ -18,6 +18,7 @@ export const trabalhos = [
     foto: "/publicimgs/miniSpotify.png",
     descricao:
       "O projeto visa desenvolver um clone do Spotify com uma abordagem que vai além da interface. Foi buscado implementar uma série de funcionalidades presentes no Spotify, incluindo sistema de curtidas de músicas, busca por nome, álbum, playlist e gênero, reprodutor dinâmico, perfis de artistas, entre outras. A aplicação foi construída utilizando tecnologias como React, Typescript, TailwindCSS e a biblioteca de componentes Shadcn.",
+    link: "https://spotify-clone-psi-gray.vercel.app/",
   },
 
   {
