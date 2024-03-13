@@ -74,7 +74,7 @@ const Titulo = ({ title, subTitle }) => {
     <>
       <div>
         <div className="flex justify-center text-[48px] font-medium">
-          <h1>{title}</h1>
+          <h1 className="mb-2">{title}</h1>
         </div>
 
         <BarStyle themestate={themeState}>
