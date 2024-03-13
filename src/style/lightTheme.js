@@ -11,13 +11,13 @@ const Light = createGlobalStyle`
   body {
     background: ${backgroundLig};
     color: ${PrimaryLig};
-    font-family: 'Play', sans-serif;
+  font-family: "Circular Std";
     margin: 0;
   }
   .headerLight{
     background: ${backgroundLig};
     color: #000;
-    font-family: 'Play', sans-serif;
+  font-family: "Circular Std";
     margin: 0;
   }
 `;

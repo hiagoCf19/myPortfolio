@@ -10,13 +10,13 @@ const Dark = createGlobalStyle`
 body {
     background: #01031b;
     color: #FFF;
-    font-family: 'Play', sans-serif;
+   font-family: "Circular Std";
     margin: 0;
   }
   .headerDark{
     background: #01031b;
     color: #FFF;
-    font-family: 'Play', sans-serif;
+   font-family: "Circular Std";
     margin: 0;
   }
 `;

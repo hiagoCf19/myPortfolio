@@ -45,6 +45,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+body{
+  font-family: "Circular Std";
+}
   ::-webkit-scrollbar {
     width: 6px;
     
@@ -57,12 +60,7 @@ table {
 }
 
   
-	.roboto{
-		font-family: 'Roboto', sans-serif;
-	}
-	.play{
-		font-family: 'Play', sans-serif;
-	}
+
 	
 	
 .anima {
