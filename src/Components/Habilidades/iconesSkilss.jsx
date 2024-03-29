@@ -1,28 +1,29 @@
-import { AiFillHtml5 } from "react-icons/ai";
-import { FaCss3Alt, FaReact, FaGitAlt, FaGithub } from "react-icons/fa";
+import { FaReact, FaGitAlt, FaGithub } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
 import { SiTailwindcss, SiStyledcomponents } from "react-icons/si";
 import temaCtx from "../../Context/context";
 import { useContext } from "react";
-
 import { CardLig, SecondaryLig } from "@/style/lightTheme";
 import { CardDark, PrimaryDark } from "@/style/darkTheme";
+import { FaJava } from "react-icons/fa6";
+import { BiLogoSpringBoot } from "react-icons/bi";
+
 const Icones = () => {
   const { themeState } = useContext(temaCtx);
 
   const cards = [
     {
-      nome: "HTML 5",
-      icon: AiFillHtml5,
-    },
-    {
-      nome: "CSS 3",
-      icon: FaCss3Alt,
-    },
-    {
       nome: "JAVASCRIPT",
       icon: RiJavascriptFill,
+    },
+    {
+      nome: "JAVA",
+      icon: FaJava,
+    },
+    {
+      nome: "SPRING BOOT",
+      icon: BiLogoSpringBoot,
     },
     {
       nome: "REACT",
