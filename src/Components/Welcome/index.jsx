@@ -45,7 +45,7 @@ const Welcome = () => {
               <Typing
                 speed={100}
                 eraseDelay={999999999}
-                text={["Desenvolvedor Front-end"]}
+                text={["Desenvolvedor Full-Stack"]}
                 className="py-2"
               />
             </span>

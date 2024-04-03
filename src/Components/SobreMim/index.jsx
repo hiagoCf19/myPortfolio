@@ -48,10 +48,11 @@ const SobreMim = () => {
               {" "}
               Eu sou{" "}
             </span>
+            Desenvolvedor{" "}
             <Typing
               speed={100}
               typingDelay={500}
-              text={[" Desenvolvedor Front-end", "Freelancer"]}
+              text={["Front-end", " Back-end", "Full-Stack"]}
               eraseDelay={500}
               cursor="|"
             />
@@ -72,13 +73,11 @@ const SobreMim = () => {
               &nbsp; Atualmente estou cursando Análise e Desenvolvimento de
               Sistemas, também estou no fim da minha graduação em História pela
               Universidade Federal Fluminense. <br /> &nbsp; Minha paixão pela
-              tecnologia me levou a explorar o vasto campo do desenvolvimento
-              web, e nos últimos tempos, tenho concentrado meus esforços no
-              universo do React, uma biblioteca JavaScript que me encanta com
-              sua versatilidade e capacidade de criar experiências interativas
-              incríveis. Estou sempre em busca de aprendizado e constantemente
-              me atualizando para abraçar as novas tecnologias que moldarão o
-              futuro do desenvolvimento web.
+              tecnologia me levou a explorar o vasto campo do desenvolvimento.
+              Nos últimos tempos, tenho concentrado meus esforços no universo
+              Java, utilizando Spring Boot. Estou sempre em busca de aprendizado
+              e constantemente me atualizando para abraçar as novas tecnologias
+              que moldarão o futuro do desenvolvimento.
             </p>
           </div>
         </div>
@@ -86,7 +85,7 @@ const SobreMim = () => {
 
       <Qualificacao />
       <a
-        href="https://drive.google.com/file/d/1gq0HLwUhDo0zRBC31QSiTPpmEAn-b6wn/view"
+        href="https://drive.google.com/file/d/1mwmktknXV-OFlQRUwgzPow2DXWvg-lbR/view?usp=sharing"
         className="mt-8 flex justify-center  sm:mr-16"
         target="_blank"
         rel="noreferrer"

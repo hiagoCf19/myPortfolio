@@ -8,6 +8,7 @@ import { CardLig, SecondaryLig } from "@/style/lightTheme";
 import { CardDark, PrimaryDark } from "@/style/darkTheme";
 import { FaJava } from "react-icons/fa6";
 import { BiLogoSpringBoot } from "react-icons/bi";
+import { PiFileSql } from "react-icons/pi";
 
 const Icones = () => {
   const { themeState } = useContext(temaCtx);
@@ -48,6 +49,10 @@ const Icones = () => {
     {
       nome: "GitHub",
       icon: FaGithub,
+    },
+    {
+      nome: "SQL",
+      icon: PiFileSql,
     },
   ];
   return (
