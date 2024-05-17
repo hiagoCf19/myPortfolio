@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 "use client";
 import * as React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronRight, ChevronLeft } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+import { Button } from "./button";
 
 const CarouselContext = React.createContext(null);
 
