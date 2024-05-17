@@ -14,7 +14,7 @@ const Nav = ({ to, content }: NavProps) => {
         duration={500}
         offset={-150}
         activeClass="ativo"
-        className={`hover:text-transparent bg-clip-text`}
+        className="hover:text-primary cursor-pointer"
       >
         {content}
       </Link>

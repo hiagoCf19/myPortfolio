@@ -8,11 +8,13 @@
 // import FooterCpn from "@/components/Footer";
 
 import Header from "@/components/Header";
+import Welcome from "@/components/Welcome";
 
 const Home = () => {
   return (
     <section className="px-5">
       <Header />
+      <Welcome />
     </section>
     // <div className="bg-background text-muted-foreground">
     //   <HeaderCpn />

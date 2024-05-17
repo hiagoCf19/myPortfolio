@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 7%;
+  --background: 0 0% 11%;
   --foreground: 0 0% 20%;
   --card: 356 50% 100%;
   --card-foreground: 356 5% 15%;
   --popover: 356 100% 100%;
   --popover-foreground: 356 100% 10%;
   --primary: 269 100% 60%;
-  --primary-foreground: 239 33% 60%;
+  --primary-foreground: 239 33% 0%;
   --secondary: 356 30% 90%;
   --secondary-foreground: 0 0% 0%;
   --muted: 318, 1%, 93%;
-  --muted-foreground: 225 8% 53%;
-  --accent: 318, 1%, 93%;
+  --muted-foreground: 263 9% 69%;
+  --accent: 282 8% 15%;
   --accent-foreground: 356 5% 15%;
   --destructive: 0 100% 50%;
   --destructive-foreground: 356 5% 100%;
@@ -37,7 +37,7 @@
   --secondary: 356 30% 20%;
   --secondary-foreground: 0 0% 100%;
   --muted: 318 30% 25%;
-  --muted-foreground: 225 8% 53%;
+  --muted-foreground: 263 9% 69%;
   --accent: 318 30% 25%;
   --accent-foreground: 356 5% 95%;
   --destructive: 0 100% 50%;
@@ -54,6 +54,6 @@
   }
 
   body {
-    @apply text-foreground antialiased;
+    @apply text-muted antialiased bg-background;
   }
 }

@@ -9,16 +9,15 @@ const ScrollStyle = styled.button`
   justify-content: center;
   background-color: transparent;
   border: none;
-
-  box-shadow: ${`0px 0px 10px #000`};
+  box-shadow: ${`0px 0px 10px #9633ff`};
   position: relative;
 
   div {
     width: 5px;
     height: 10px;
     border-radius: 10px;
-    background-color: #fff;
-    box-shadow: ${`0px 0px 10px #000`};
+    background-color: #9633ff;
+    box-shadow: ${`0px 0px 10px #9633ff`};
     animation: scroll_4013 2s linear infinite;
     transform: translateY(40%);
   }
@@ -28,7 +27,7 @@ const ScrollStyle = styled.button`
     font-family: "Play", sans-serif;
     position: absolute;
     top: 140%;
-    color: #fff;
+    color: #9633ff;
     text-transform: uppercase;
     letter-spacing: 1.5px;
   }
@@ -45,7 +44,7 @@ const ScrollStyle = styled.button`
 `;
 const MouseIcon = () => {
   return (
-    <div className="flex justify-center sm:mt-[-180px]">
+    <div className="flex justify-center">
       <ScrollStyle>
         <div> </div>
       </ScrollStyle>

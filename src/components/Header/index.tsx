@@ -1,22 +1,58 @@
+import { MenuIcon } from "lucide-react";
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
 import Nav from "./navegations";
+import { Button } from "../ui/button";
 
 
 const Header = () => {
   return (
-    <header className="w-full border-gradient fixed flex flex-col justify-center ">
-      <nav className="flex justify-between sm:p-6 py-6 px-4 items-center ">
-        <h1 className={` sm:w-[150px]  text-[1.3rem]`}>
-          Hiago Ferreira
-        </h1>
-        <div className="flex items-center sm:gap-8 text-[20px]">
-          <Nav to={"sobre-mim"} content={"Sobre mim"} />
-          <Nav to={"habilidades"} content={"Habilidades"} />
-          <Nav to={"projetos"} content={"Projetos"} />
-          <Nav to={"contatos"} content={"Contatos"} />
-        </div>
-      </nav>
-      <div className={`sm:w-full w-[200%] h-[2px] `} />
-    </header>
+
+    <>
+      <header className="fixed top-0 right-0 left-0  flex flex-col justify-center w-full sm:px-40 py-5 border-b border-foreground px-5  ">
+        <nav className="flex justify-between items-center w-full ">
+          <h1 className="sm:text-xl text-lg font-medium">
+            Hiago Ferreira
+          </h1>
+          <div className="hidden sm:block">
+            <div className="flex items-center sm:gap-8 text-xl ">
+              <Nav to={"sobre-mim"} content={"Sobre mim"} />
+              <Nav to={"habilidades"} content={"Habilidades"} />
+              <Nav to={"projetos"} content={"Projetos"} />
+              <Nav to={"contatos"} content={"Contatos"} />
+            </div>
+          </div>
+          <Sheet >
+            <SheetTrigger>
+              <Button size={"icon"} variant={"default"} className="bg-background border border-primary hover:bg-accent ">
+                <MenuIcon className="text-muted" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent className="border-none">
+              <SheetHeader>
+                <SheetTitle className="text-muted mb-6 text-xl">Hiago Ferreira</SheetTitle>
+                <SheetDescription className="flex flex-col space-y-5 ">
+
+                  <h3 className="text-lg text-start font-medium">Navegação</h3>
+                  <div className="flex flex-col gap-4 text-base justify-start items-start">
+                    <Nav to={"sobre-mim"} content={"Sobre mim"} />
+                    <Nav to={"habilidades"} content={"Habilidades"} />
+                    <Nav to={"projetos"} content={"Projetos"} />
+                    <Nav to={"contatos"} content={"Contatos"} />
+                  </div>
+
+                </SheetDescription>
+              </SheetHeader>
+            </SheetContent>
+          </Sheet>
+
+
+        </nav>
+      </header>
+      <div className="h-[81px] "></div>
+    </>
+
+
+
 
 
   );
