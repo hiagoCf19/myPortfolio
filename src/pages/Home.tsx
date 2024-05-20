@@ -8,13 +8,17 @@
 // import FooterCpn from "@/components/Footer";
 
 import Header from "@/components/Header";
+import SobreMim from "@/components/SobreMim";
 import Welcome from "@/components/Welcome";
+
 
 const Home = () => {
   return (
-    <section className="px-5">
+    <section className="px-5 flex flex-col space-y-10">
       <Header />
+      <img src="./publicimgs/grad.svg" className="absolute w-fit -mx-5" />
       <Welcome />
+      <SobreMim />
     </section>
     // <div className="bg-background text-muted-foreground">
     //   <HeaderCpn />

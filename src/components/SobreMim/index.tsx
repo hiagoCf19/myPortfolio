@@ -1,8 +1,9 @@
-import Titulo from "../Titulo";
-import Typing from "react-typing-effect";
+
 import Qualificacao from "./Qualificacao";
 
 import { Element } from "react-scroll";
+import Title from "../Titulo";
+import ReactTypingEffect from "react-typing-effect";
 
 const SobreMim = () => {
   return (
@@ -10,9 +11,7 @@ const SobreMim = () => {
       className="mx-4 sm:mx-0 flex flex-col justify-center "
       name="sobre-mim"
     >
-      <div>
-        <Titulo title={"Sobre mim"} subTitle={"Quem eu sou ?"} />
-      </div>
+      <Title title="Sobre mim" subTitle="Quem eu sou" />
       <div className="flex sm:justify-center gap-8  items-center sm:px-8">
         {/* MINHA FOTO */}
         <div className=" items-center justify-center hidden sm:block mt-12">
@@ -25,38 +24,30 @@ const SobreMim = () => {
           </div>
         </div>
         {/* CONTAINER DO TEXTO SOBRE MIM */}
-        <div className="w-[500px] flex flex-col gap-8">
+        <div className=" flex flex-col">
           {/* BORDA GRADIENTE */}
           <h3
-            className={`font-bold text-[20px] text-transparent bg-clip-text `}
+            className="text-base"
           >
+            Atuo como desenvolvedor {" "}
             {/* textos */}
-            <span className="font-bold text-[#000000]"> Eu sou </span>
-            Desenvolvedor{" "}
-            <Typing
+            <ReactTypingEffect
+              text={["Front-end", "Back-end", "Full-stack", "Freelancer"]}
+
               speed={100}
-              typingDelay={500}
-              text={["Front-end", " Back-end", "Full-Stack"]}
-              eraseDelay={500}
-              cursor="|"
+              eraseDelay={1000}
+              className=' text-primary'
             />
+            {" "}
           </h3>
 
           <div className=" flex gap-4 sm:flex-row flex-col ">
             <div className={`sm:h-[320px] sm:w-8  w-full h-[4px]  `}></div>
 
             <p
-              className="flex sm:leading-normal leading-snug text-justify text-[18px]
-              text-[#ffffff]"
+              className=" text-muted-foreground text-justify"
             >
-              &nbsp; Atualmente estou cursando Análise e Desenvolvimento de
-              Sistemas, também estou no fim da minha graduação em História pela
-              Universidade Federal Fluminense. <br /> &nbsp; Minha paixão pela
-              tecnologia me levou a explorar o vasto campo do desenvolvimento.
-              Nos últimos tempos, tenho concentrado meus esforços no universo
-              Java, utilizando Spring Boot. Estou sempre em busca de aprendizado
-              e constantemente me atualizando para abraçar as novas tecnologias
-              que moldarão o futuro do desenvolvimento.
+              Estou atualmente cursando Desenvolvimento de Sistemas. Minha paixão pela tecnologia me levou a explorar o vasto campo do desenvolvimento de software. Após alguns anos estudando a interatividade com o usuário, venho expandindo meus estudos e projetos para englobar o universo Java, especialmente utilizando o framework Spring Boot.<br /> Isso tem impulsionado minha evolução constante no caminho fullstack. Sou dedicado ao aprendizado contínuo e estou sempre me atualizando para acompanhar as novas tecnologias que moldam o futuro do desenvolvimento.
             </p>
           </div>
         </div>

@@ -28,7 +28,7 @@ const BarStyle = styled.div`
   .c1::before {
     content: "";
     position: absolute;
-    background-image: ${`  linear-gradient(to right, #000, #FFF)`};
+    background-image: ${`  linear-gradient(to right, #9633ffaf, #1c1c1c)`};
     width: 0%;
     height: 100%;
     border-radius: 2px;
@@ -51,18 +51,21 @@ const BarStyle = styled.div`
     }
   }
 `;
+interface TitleProps {
+  title: string
+  subTitle: string
+}
 
-// eslint-disable-next-line react/prop-types
-const Titulo = ({ title, subTitle }) => {
+const Title = ({ title, subTitle }: TitleProps) => {
   return (
     <>
       <div>
-        <div className="flex justify-center text-[48px] font-medium">
-          <h1 className="mb-2">{title}</h1>
+        <div className="flex justify-center text-[38px] font-medium">
+          <h1 className="">{title}</h1>
         </div>
 
         <BarStyle>
-          <h1 className={`p-2 z-10 text-lg font-normal #000`}> {subTitle} </h1>
+          <h1 className={`px-px z-10 text-lg bg-background text-muted-foreground font-medium`}> {subTitle} </h1>
           <div className="c1">
             <div className="c2">
               <div></div>
@@ -73,4 +76,4 @@ const Titulo = ({ title, subTitle }) => {
     </>
   );
 };
-export default Titulo;
+export default Title;

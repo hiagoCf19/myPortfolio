@@ -6,9 +6,8 @@ import { Button } from "../ui/button";
 
 const Header = () => {
   return (
-
     <>
-      <header className="fixed top-0 right-0 left-0  flex flex-col justify-center w-full sm:px-40 py-5 border-b border-foreground px-5  ">
+      <header className="fixed top-0 right-0 left-0  flex flex-col justify-center w-full sm:px-40 py-5 border-b border-foreground px-5 bg-background mt-0 z-50 ">
         <nav className="flex justify-between items-center w-full ">
           <h1 className="sm:text-xl text-lg font-medium">
             Hiago Ferreira
