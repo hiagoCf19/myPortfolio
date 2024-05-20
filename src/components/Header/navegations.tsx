@@ -2,8 +2,10 @@ import { Link } from "react-scroll";
 interface NavProps {
   to: string;
   content: string;
+  setIsOpen: (isOpen: boolean) => void
 }
-const Nav = ({ to, content }: NavProps) => {
+
+const Nav = ({ to, content, setIsOpen }: NavProps) => {
   return (
     <nav>
       <Link
@@ -14,6 +16,7 @@ const Nav = ({ to, content }: NavProps) => {
         offset={-150}
         activeClass="ativo"
         className="hover:text-primary cursor-pointer"
+        onClick={() => setIsOpen(false)}
       >
         {content}
       </Link>
