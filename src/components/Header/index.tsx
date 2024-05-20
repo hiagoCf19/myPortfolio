@@ -21,9 +21,9 @@ const Header = () => {
             </div>
           </div>
           <Sheet >
-            <SheetTrigger>
-              <Button size={"icon"} variant={"default"} className="bg-background border border-primary hover:bg-accent ">
-                <MenuIcon className="text-muted" />
+            <SheetTrigger asChild>
+              <Button size={"icon"} variant={"default"} className="bg-background border border-primary hover:bg-accent text-muted">
+                <MenuIcon />
               </Button>
             </SheetTrigger>
             <SheetContent className="border-none">

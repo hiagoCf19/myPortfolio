@@ -8,7 +8,7 @@ import ReactTypingEffect from "react-typing-effect";
 const SobreMim = () => {
   return (
     <Element
-      className="mx-4 sm:mx-0 flex flex-col justify-center "
+      className=" sm:mx-0 flex flex-col justify-center "
       name="sobre-mim"
     >
       <Title title="Sobre mim" subTitle="Quem eu sou" />

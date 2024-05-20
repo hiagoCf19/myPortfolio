@@ -1,17 +1,20 @@
 import { Element } from "react-scroll";
 import Titulo from "../Titulo";
-import Icones from "./iconesSkilss";
+import Icons from "./icons";
+
 
 const Habilidades = () => {
   return (
     <Element
-      className="sm:mx-6 flex flex-col justify-center py-20"
+      className="sm:mx-6 flex flex-col justify-center"
       name="habilidades"
     >
-      <div>
-        <Titulo title={"Habilidades"} subTitle={"O que eu sei"} />
-      </div>
-      <Icones />
+
+      <Titulo title={"Habilidades"} subTitle={"O que eu sei"} />
+
+      <Icons />
+
+
     </Element>
   );
 };

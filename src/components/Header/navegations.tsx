@@ -1,5 +1,4 @@
 import { Link } from "react-scroll";
-// eslint-disable-next-line react/prop-types
 interface NavProps {
   to: string;
   content: string;
