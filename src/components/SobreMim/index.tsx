@@ -45,14 +45,17 @@ const SobreMim = () => {
             <div className="hidden sm:block h-[300px] w-2 bg-primary"></div>
 
             <div
-              className=" text-muted-foreground sm:mt-3 flex flex-col gap-5"
+              className=" text-muted-foreground sm:mt-3 flex flex-col gap-5 text-justify"
             >
               Estou atualmente cursando Desenvolvimento de Sistemas. Minha paixão pela tecnologia me levou a explorar o vasto campo do desenvolvimento de software. Após alguns anos estudando a interatividade com o usuário, venho expandindo meus estudos e projetos para englobar o universo Java, especialmente utilizando o framework Spring Boot.<br /> Isso tem impulsionado minha evolução constante no caminho fullstack. Sou dedicado ao aprendizado contínuo e estou sempre me atualizando para acompanhar as novas tecnologias que moldam o futuro do desenvolvimento.
 
-              <Button type="button" variant={"outline"} size={"sm"} className="w-min flex items-center gap-4">
-                <GoPaperclip size={18} />
-                Ver currículo
-              </Button>
+              <div className="flex sm:block justify-center items-center w-full ">
+                <Button type="button" variant={"outline"} size={"sm"} className="w-min flex items-center gap-4">
+                  <GoPaperclip size={18} />
+                  Ver currículo
+                </Button>
+
+              </div>
 
             </div>
 
