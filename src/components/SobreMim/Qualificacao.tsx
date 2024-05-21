@@ -13,7 +13,7 @@ const Qualificacao = () => {
           {/* lote1 */}
           <div className=" flex flex-1 flex-col gap-2">
             <h4 className="text-xl font-medium">História</h4>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm sm:text-base text-muted-foreground">
               Universidade Federal Fluminense
             </p>
             <span className="flex items-center gap-2">
@@ -30,7 +30,7 @@ const Qualificacao = () => {
             <h4 className="text-xl font-medium">
               Desenvolvimento de sistemas
             </h4>
-            <p className="text-sm flex text-muted-foreground">
+            <p className="text-sm sm:text-base flex text-muted-foreground">
               Faculdade descomplica
             </p>
             <span className="flex items-center justify-end gap-2 mt-3 text-[#a7a7a7]">

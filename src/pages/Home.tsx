@@ -19,10 +19,11 @@ import Welcome from "@/components/Welcome";
 const Home = () => {
   return (
     <>
+      <Header />
+      <section className="px-5 lg:px-48 flex flex-col space-y-10 sm:space-y-32">
 
-      <section className="px-5 flex flex-col space-y-10">
-        <Header />
-        <img src="./publicimgs/grad.svg" className="absolute w-fit -mx-5" />
+        <img src="./publicimgs/grad.svg" className=" absolute sm:fixed h-screen w-fit -mx-5 sm:right-0 sm:-mx-0 sm:opacity-55 -z-10" />
+        <img src="./publicimgs/grad.svg" className=" hidden lg:block fixed h-screen w-fit -mx-5 sm:left-0 sm:-mx-0 sm:opacity-66 rotate-180 -z-10" />
         <Welcome />
         <SobreMim />
         <Habilidades />

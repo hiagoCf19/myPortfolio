@@ -1,13 +1,15 @@
 import { Element } from "react-scroll";
 import Titulo from "../Titulo";
-import { CarouselProjects } from "./carousel";
+import { CarouselProjectsMobile } from "./carousel";
+
 
 
 const Projetos = () => {
   return (
     <Element name="projetos">
       <Titulo title={"Projetos"} subTitle={"O que eu fiz"} />
-      <CarouselProjects />
+      <CarouselProjectsMobile />
+
 
     </Element>
   );

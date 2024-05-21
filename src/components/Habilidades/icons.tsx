@@ -51,18 +51,18 @@ const Icons = () => {
   return (
     <div className="">
       <div
-        className="grid grid-cols-2"
+        className="grid grid-cols-2 lg:grid-cols-5"
       >
         {cards.map((hab, i) => (
           <div
             key={i}
-            className="p-3 m-1 border border-primary rounded-lg"
+            className="p-3 lg:p-5 m-1 lg:m-2 border border-primary rounded-lg"
           >
             <p className="text-center text-muted-foreground font-medium">
               {hab.nome}
             </p>
             <div className="flex justify-center">
-              <hab.icon size={50} className="text-primary" />
+              <hab.icon size={50} className="text-primary " />
             </div>
           </div>
         ))}

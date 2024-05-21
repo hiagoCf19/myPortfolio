@@ -12,7 +12,7 @@ interface InputGenericProps {
 
 const InputGeneric = ({ label, onchange, value, placeholder }: InputGenericProps) => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 sm:w-full">
       <Label className="text">{label}</Label>
       <Input
         placeholder={placeholder}
