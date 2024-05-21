@@ -29,6 +29,7 @@ const BarStyle = styled.div`
     content: "";
     position: absolute;
     background-image: ${`  linear-gradient(to right, #9633ffaf, #1c1c1c)`};
+    opacity: 1;
     width: 0%;
     height: 100%;
     border-radius: 2px;
@@ -65,7 +66,7 @@ const Title = ({ title, subTitle }: TitleProps) => {
         </div>
 
         <BarStyle>
-          <h1 className={`px-px z-10 text-lg bg-background text-muted-foreground font-medium`}> {subTitle} </h1>
+          <h1 className={`px-px z-10 text-lg bg-background text-muted-foreground font-medium `}> {subTitle} </h1>
           <div className="c1">
             <div className="c2">
               <div></div>
