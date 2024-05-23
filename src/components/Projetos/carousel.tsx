@@ -30,8 +30,8 @@ export const CarouselProjectsMobile = () => {
           {projetos.map((p) => (
 
             <CarouselItem key={p.nome} className="space-y-4 sm:flex sm:gap-8">
-              <div className="sm:flex-1">
-                <img className="aspect-square sm:aspect-auto rounded-lg lg:flex-1" src={p.foto} alt={p.nome} />
+              <div className="sm:flex-1 items-center justify-center flex">
+                <img className="aspect-square lg:aspect-auto rounded-lg lg:flex-1" src={p.foto} alt={p.nome} />
               </div>
               <div className="sm:flex-1">
                 <div className=" flex flex-col gap-3">
@@ -77,7 +77,7 @@ export const CarouselProjectsMobile = () => {
                 </div>
                 <div className="pt-4 flex justify-center sm:justify-start">
                   <Button variant={"outline"} className="border border-primary hover:bg-background hover:text-primary" size={"lg"} asChild>
-                    <a href={p.link}>
+                    <a href={p.link} target="_blank">
                       Ver projeto
                     </a>
                   </Button>
