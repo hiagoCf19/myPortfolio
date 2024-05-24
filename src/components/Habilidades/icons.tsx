@@ -1,15 +1,21 @@
-import { FaReact, FaGitAlt } from "react-icons/fa";
+import { FaReact, FaGitAlt, FaSass } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
-import { SiTailwindcss, SiStyledcomponents } from "react-icons/si";
+
+import { SiTailwindcss, SiStyledcomponents, SiNextdotjs, SiFlyway, SiPrisma } from "react-icons/si";
 import { FaJava } from "react-icons/fa6";
 import { BiLogoSpringBoot, BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import { PiGithubLogoFill } from "react-icons/pi";
+import { DiMysql } from "react-icons/di";
 
 const Icons = () => {
   const cards = [
     {
       nome: "JAVASCRIPT",
       icon: RiJavascriptFill,
+    },
+    {
+      nome: "TYPESCRIPT",
+      icon: BiLogoTypescript,
     },
     {
       nome: "JAVA",
@@ -24,9 +30,10 @@ const Icons = () => {
       icon: FaReact,
     },
     {
-      nome: "TYPESCRIPT",
-      icon: BiLogoTypescript,
+      nome: "NEXT",
+      icon: SiNextdotjs,
     },
+
     {
       nome: "TAILWIND",
       icon: SiTailwindcss,
@@ -34,6 +41,10 @@ const Icons = () => {
     {
       nome: "STYLED COMPONENTS",
       icon: SiStyledcomponents,
+    },
+    {
+      nome: "SASS",
+      icon: FaSass,
     },
     {
       nome: "Git",
@@ -47,6 +58,18 @@ const Icons = () => {
       nome: "Postgresql",
       icon: BiLogoPostgresql,
     },
+    {
+      nome: "MYSQL",
+      icon: DiMysql,
+    },
+    {
+      nome: "PRISMA",
+      icon: SiPrisma,
+    },
+    {
+      nome: "FLYWAY",
+      icon: SiFlyway
+    }
   ];
   return (
     <div className="">

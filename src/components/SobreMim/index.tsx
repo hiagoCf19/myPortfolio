@@ -52,7 +52,7 @@ const SobreMim = () => {
               <div className="flex sm:block justify-center items-center w-full ">
 
                 <Button type="button" variant={"outline"} size={"sm"} className="w-min flex items-center gap-4" asChild>
-                  <a href="https://drive.google.com/file/d/1fSXkaLQ-QL3ukyJATcrDQJRvN6ZDwpWp/view?usp=sharing">
+                  <a href="https://drive.google.com/file/d/1nIDpEnkABZGPW7QLY5j5FbqdG9aT3PVR/view?usp=sharing">
                     <GoPaperclip size={18} target="_blank" />
                     Ver currículo</a>
 

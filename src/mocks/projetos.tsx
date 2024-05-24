@@ -2,7 +2,7 @@ import { IconType } from "react-icons/lib";
 import { DiFirebase, DiMysql } from "react-icons/di";
 import { FaReact, FaCss3 } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
-import { SiTailwindcss, SiStyledcomponents, SiSpringsecurity, SiAuth0, SiNextdotjs, SiPrisma, SiReact } from "react-icons/si";
+import { SiTailwindcss, SiStyledcomponents, SiSpringsecurity, SiAuth0, SiNextdotjs, SiPrisma, SiReact, SiFlyway } from "react-icons/si";
 import { FaJava, FaHtml5 } from "react-icons/fa6";
 import { BiLogoSpringBoot, BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 
@@ -53,7 +53,7 @@ export const projetos: Projeto[] = [
     foto: "/projetos/passIn01.png",
     descricao: "O pass.in é uma aplicação de gestão de participantes em eventos presenciais. A ferramenta permite que o organizador cadastre e gerencie um evento abrindo uma página pública de inscrição. Os participantes inscritos podem emitir uma credencial para check-in no dia do evento. O sistema fará um scan da credencial do participante para permitir a entrada no evento.",
     link: "https://github.com/hiagoCf19/pass-in",
-    tecs: [FaJava, BiLogoSpringBoot, DiMysql]
+    tecs: [FaJava, BiLogoSpringBoot, DiMysql, SiFlyway]
   },
   {
     nome: "Hia-med",
@@ -62,7 +62,7 @@ export const projetos: Projeto[] = [
     foto: "/projetos/hia.med01.png",
     descricao: "A Hia-Med é uma aplicação robusta para a gestão de clínicas médicas, projetada para otimizar o gerenciamento de operações diárias. Com a Hia-Med, administradores autenticados podem cadastrar, excluir e atualizar perfis de médicos e pacientes na base de dados da clínica. Agendar e gerenciar consultas dentro do horário de funcionamento da clínica, garantindo uma organização eficiente e prática.Esta aplicação foi desenvolvida para proporcionar uma experiência intuitiva e simplificada para administradores, permitindo um controle total sobre as atividades essenciais da clínica.",
     link: "https://github.com/hiagoCf19/hiamed_api",
-    tecs: [FaJava, BiLogoSpringBoot, DiMysql, SiSpringsecurity, SiAuth0]
+    tecs: [FaJava, BiLogoSpringBoot, DiMysql, SiSpringsecurity, SiAuth0, SiFlyway]
   },
   {
     nome: "Notes",
