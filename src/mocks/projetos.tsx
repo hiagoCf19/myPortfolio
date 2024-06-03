@@ -20,22 +20,33 @@ export const projetos: Projeto[] = [
     nome: "NextFood",
     subtitle: "Plataforma de restaurantes",
     stack: "Full-stack",
-    foto: "/projetos/nextFood01.png",
+    foto: "/publicimgs/next-food-home.png",
     descricao:
       "NextFood é uma plataforma que disponibiliza uma variedade de restaurantes que trabalham com diferentes categorias de alimentos para pronta entrega, a plataforma permite que o usuario se cadastre realizando autenticação com o google e gerencie seus pedidos.",
     link: "https://next-food-hiago-dev.vercel.app/",
     tecs: [SiNextdotjs, SiReact, BiLogoTypescript, SiTailwindcss, BiLogoPostgresql, SiPrisma]
   },
   {
+    nome: "DashB",
+    subtitle: "Gerenciamento de estoque.",
+    stack: "Full-stack",
+    foto: "/publicimgs/dash-home.png",
+    descricao:
+      "Esta aplicação foi desenvolvida para funcionar como uma extensão de outros sistemas, permitindo um controle abrangente do estoque de produtos. Com ela, é possível visualizar detalhes dos produtos, editar informações, excluir itens e registrar novos produtos de forma eficiente.",
+    link: "https://dashboardcontrol-hiagocf19s-projects.vercel.app/",
+    tecs: [BiLogoSpringBoot, SiNextdotjs, SiReact, BiLogoTypescript, FaJava, SiTailwindcss, BiLogoPostgresql, SiFlyway,]
+  },
+  {
     nome: "TsStore",
     subtitle: "E-commerce de roupas e utilitários",
     stack: "Full-stack",
-    foto: "/publicimgs/tsStore-preview.png",
+    foto: "/publicimgs/tsStore-login.png",
     descricao:
       "TsStore é uma aplicação de E-commerce completo construída utilizando TypeScript e React. Esta aplicação oferece um sistema robusto de login, um banco de dados para armazenar os dados do usuário e funcionalidades essenciais para uma experiência de compra completa.",
     link: "https://ts-store-sigma.vercel.app/",
     tecs: [FaReact, BiLogoTypescript, SiTailwindcss, DiFirebase, SiStyledcomponents]
   },
+
   {
     nome: "Spotify",
     subtitle: "Clone funcional do Spotify",
@@ -59,7 +70,7 @@ export const projetos: Projeto[] = [
     nome: "Hia-med",
     subtitle: "Gerenciamento de clínica médica",
     stack: "Back-end",
-    foto: "/projetos/hia.med01.png",
+    foto: "/publicimgs/hia.med01.png",
     descricao: "A Hia-Med é uma aplicação robusta para a gestão de clínicas médicas, projetada para otimizar o gerenciamento de operações diárias. Com a Hia-Med, administradores autenticados podem cadastrar, excluir e atualizar perfis de médicos e pacientes na base de dados da clínica. Agendar e gerenciar consultas dentro do horário de funcionamento da clínica, garantindo uma organização eficiente e prática.Esta aplicação foi desenvolvida para proporcionar uma experiência intuitiva e simplificada para administradores, permitindo um controle total sobre as atividades essenciais da clínica.",
     link: "https://github.com/hiagoCf19/hiamed_api",
     tecs: [FaJava, BiLogoSpringBoot, DiMysql, SiSpringsecurity, SiAuth0, SiFlyway]
