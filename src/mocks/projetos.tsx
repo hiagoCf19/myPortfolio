@@ -61,7 +61,7 @@ export const projetos: Projeto[] = [
     nome: "Pass-in",
     subtitle: "Gestão de eventos presenciais.",
     stack: "Back-end",
-    foto: "/projetos/passIn01.png",
+    foto: "/publicimgs/passIn01.png",
     descricao: "O pass.in é uma aplicação de gestão de participantes em eventos presenciais. A ferramenta permite que o organizador cadastre e gerencie um evento abrindo uma página pública de inscrição. Os participantes inscritos podem emitir uma credencial para check-in no dia do evento. O sistema fará um scan da credencial do participante para permitir a entrada no evento.",
     link: "https://github.com/hiagoCf19/pass-in",
     tecs: [FaJava, BiLogoSpringBoot, DiMysql, SiFlyway]
