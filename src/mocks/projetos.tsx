@@ -58,6 +58,16 @@ export const projetos: Projeto[] = [
     tecs: [FaReact, BiLogoTypescript, SiTailwindcss]
   },
   {
+    nome: "Plann.er",
+    subtitle: "Sistema de gerenciamento de viagens",
+    stack: "Full-stack",
+    foto: "/publicimgs/planner-trip.png",
+    descricao:
+      "O plann.er é um sistema de planejamento de viagens desenvolvido com Spring Boot, React e TypeScript. A plataforma permite que os usuários criem viagens, convidem participantes e gerenciem todos os aspectos de suas jornadas. Com o plann.er, é possível cadastrar atividades, adicionar links importantes e gerenciar convidados de forma prática e intuitiva.",
+    link: "https://github.com/hiagoCf19/planner.web",
+    tecs: [FaReact, BiLogoTypescript, SiTailwindcss, FaJava, BiLogoSpringBoot]
+  },
+  {
     nome: "Pass-in",
     subtitle: "Gestão de eventos presenciais.",
     stack: "Back-end",
