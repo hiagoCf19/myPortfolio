@@ -25,29 +25,6 @@
   --radius: 0.75rem;
 }
 
-.dark {
-  --background: 356 50% 10%;
-  --foreground: 356 5% 100%;
-  --card: 356 50% 10%;
-  --card-foreground: 356 5% 100%;
-  --popover: 356 50% 5%;
-  --popover-foreground: 356 5% 100%;
-  --primary: 356 83% 51.6%;
-  --primary-foreground: 0 0% 100%;
-  --secondary: 356 30% 20%;
-  --secondary-foreground: 0 0% 100%;
-  --muted: 318 30% 25%;
-  --muted-foreground: 263 9% 69%;
-  --accent: 318 30% 25%;
-  --accent-foreground: 356 5% 95%;
-  --destructive: 0 100% 50%;
-  --destructive-foreground: 356 5% 100%;
-  --border: 356 83% 51.6%;
-  --input: 356 83% 51.6%;
-  --ring: 356 83% 51.6%;
-  --radius: 0.75rem;
-}
-
 @layer base {
   * {
     @apply box-border;
@@ -56,4 +33,42 @@
   body {
     @apply text-muted antialiased bg-background;
   }
+}
+.card {
+  width: 200px;
+  height: 104px;
+  background-image: linear-gradient(163deg, #7b00ff74 0%, #ffffff74 100%);
+  border-radius: 14px;
+  transition: all 0.3s;
+}
+
+.card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 104px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+@media (max-width: 600px) {
+  .card2 {
+    width: 170px;
+    height: 104px;
+    scale: 98%;
+  }
+  .card {
+    width: 170px;
+    height: 104px;
+  }
+}
+
+.card2:hover {
+  transform: scale(0.98);
+  color: #9633ff;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 20px 1px rgba(124, 0, 255, 0.3);
 }

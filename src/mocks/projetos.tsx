@@ -96,6 +96,17 @@ export const projetos: Projeto[] = [
     tecs: [FaReact, RiJavascriptFill, SiTailwindcss]
   },
   {
+    nome: "Fullcar",
+    subtitle: "Plataforma de venda de veículos",
+    stack: "Full-stack",
+    foto: "/publicimgs/fullcar.png",
+    descricao:
+      "A plataforma FullCar é um marketplace de veículos projetado para oferecer uma solução simples e eficiente para a criação e gerenciamento de anúncios de automóveis. Após realizar o cadastro, os usuários podem anunciar gratuitamente seus veículos, contando com um sistema robusto de login que garante segurança e facilidade no acesso à plataforma. A aplicação destaca- se pela integração fluida com a API da Tabela Fipe, que permite buscar automaticamente informações atualizadas sobre os veículos no momento do cadastro.Dessa forma, os anunciantes têm acesso rápido e preciso aos dados de mercado, facilitando a criação de anúncios de maneira prática e intuitiva.Com foco em usabilidade, a plataforma possibilita ao usuário criar uma conta com um único cadastro por e - mail, visualizar seus anúncios e gerenciar as informações dos veículos, garantindo uma experiência simplificada e eficiente.",
+    link: "https://h-rest-react.vercel.app/",
+    tecs: [FaReact, RiJavascriptFill, SiTailwindcss]
+  },
+
+  {
     nome: "Bleach Seasons",
     subtitle: "Guia da série Bleach",
     stack: "Front-end",
