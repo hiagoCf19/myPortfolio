@@ -57,7 +57,7 @@ const SobreMim = () => {
                   className="w-min flex items-center gap-4"
                   asChild
                 >
-                  <a href="https://drive.google.com/file/d/1nIDpEnkABZGPW7QLY5j5FbqdG9aT3PVR/view?usp=sharing">
+                  <a href="https://drive.google.com/file/d/1zK2uwtiblLrFt4r0R_99r6frmFUNWgiB/view?usp=sharing">
                     <GoPaperclip size={18} target="_blank" />
                     Ver currículo
                   </a>
@@ -69,7 +69,7 @@ const SobreMim = () => {
       </div>
 
       <a
-        href="https://drive.google.com/file/d/1mwmktknXV-OFlQRUwgzPow2DXWvg-lbR/view?usp=sharing"
+        href="https://drive.google.com/file/d/1zK2uwtiblLrFt4r0R_99r6frmFUNWgiB/view?usp=sharing"
         className="mt-8 flex justify-center  sm:mr-16"
         target="_blank"
         rel="noreferrer"
