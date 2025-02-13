@@ -12,18 +12,15 @@ import {
   SiAuth0,
   SiFastify,
   SiPhp,
+  SiSpring,
+  SiSqlite,
 } from "react-icons/si";
 
 import { FaJava } from "react-icons/fa6";
-import {
-  BiKey,
-  BiLogoSpringBoot,
-  BiLogoPostgresql,
-  BiLogoTypescript,
-} from "react-icons/bi";
+import { BiKey, BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import { PiGithubLogoFill } from "react-icons/pi";
 import { DiMysql } from "react-icons/di";
-import { TbBrandNodejs } from "react-icons/tb";
+import { TbBrandNodejs, TbDeviceMobileCode } from "react-icons/tb";
 
 export enum stacks {
   "FULL-STACK" = "FULL-STACK",
@@ -53,8 +50,8 @@ export const skill = [
     stack: stacks["FULL-STACK"],
   },
   {
-    nome: "SPRING BOOT",
-    icon: <BiLogoSpringBoot size={24} />,
+    nome: "SPRING",
+    icon: <SiSpring size={24} />,
     stack: stacks["BACK-END"],
   },
   {
@@ -96,6 +93,11 @@ export const skill = [
   {
     nome: "MYSQL",
     icon: <DiMysql size={32} />,
+    stack: stacks["BACK-END"],
+  },
+  {
+    nome: "SQLite",
+    icon: <SiSqlite size={32} />,
     stack: stacks["BACK-END"],
   },
   {
@@ -157,5 +159,16 @@ export const skill = [
     nome: "FASTIFY",
     icon: <SiFastify size={24} />,
     stack: stacks["BACK-END"],
+  },
+  {
+    nome: "NEST",
+    icon: <SiFastify size={24} />,
+    stack: stacks["BACK-END"],
+  },
+
+  {
+    nome: "REACT NATIVE",
+    icon: <TbDeviceMobileCode size={24} />,
+    stack: "Outros",
   },
 ];

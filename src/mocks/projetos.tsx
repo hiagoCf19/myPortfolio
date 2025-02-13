@@ -140,6 +140,16 @@ export const projetos: Projeto[] = [
     ],
   },
   {
+    nome: "Best burger",
+    subtitle: "Sistema de gerenciamento de restaurante",
+    stack: "Front-end",
+    foto: "/publicimgs/printP1.png",
+    descricao:
+      " Esse projeto visa simplificar o processo de pedidos em restaurantes, oferecendo aos clientes a opção de fazer pedidos online, eliminando a necessidade de ligar para o atendimento telefônico e permitindo que os pedidos sejam enviados diretamente para o WhatsApp da empresa.",
+    link: "https://h-rest-react.vercel.app/",
+    tecs: [FaReact, BiLogoTypescript, SiTailwindcss],
+  },
+  {
     nome: "Dev.Food",
     subtitle: "Aplicativo de delivery",
     stack: "Mobile",
@@ -186,16 +196,6 @@ export const projetos: Projeto[] = [
       "O objetivo principal do projeto é criar um gravador de notas com a capacidade de gravar notas por áudio. Ao longo do desenvolvimento desta aplicação de interface simples, pude aprimorar minhas habilidades no tratamento de acessibilidade.",
     link: "https://gravador-de-notas.vercel.app/",
     tecs: [FaReact, BiLogoTypescript, SiTailwindcss],
-  },
-  {
-    nome: "HRest",
-    subtitle: "Sistema de gerenciamento de restaurante",
-    stack: "Front-end",
-    foto: "/publicimgs/printP1.png",
-    descricao:
-      " Esse projeto visa simplificar o processo de pedidos em restaurantes, oferecendo aos clientes a opção de fazer pedidos online, eliminando a necessidade de ligar para o atendimento telefônico e permitindo que os pedidos sejam enviados diretamente para o WhatsApp da empresa.",
-    link: "https://h-rest-react.vercel.app/",
-    tecs: [FaReact, RiJavascriptFill, SiTailwindcss],
   },
 
   {
