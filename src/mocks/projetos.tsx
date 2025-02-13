@@ -1,7 +1,6 @@
 import { IconType } from "react-icons/lib";
 import { DiFirebase, DiMysql } from "react-icons/di";
 import { FaReact, FaCss3, FaAws } from "react-icons/fa";
-import { RiJavascriptFill } from "react-icons/ri";
 import {
   SiTailwindcss,
   SiStyledcomponents,
