@@ -1,5 +1,5 @@
 import { IconType } from "react-icons/lib";
-import { DiFirebase, DiMysql } from "react-icons/di";
+import { DiFirebase, DiMysql, DiPostgresql } from "react-icons/di";
 import { FaReact, FaCss3, FaAws } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -19,6 +19,7 @@ import {
   BiLogoTypescript,
 } from "react-icons/bi";
 import { TbBrandReactNative } from "react-icons/tb";
+import { RiOpenaiFill } from "react-icons/ri";
 
 interface Projeto {
   nome: string;
@@ -64,6 +65,16 @@ export const projetos: Projeto[] = [
       BiLogoPostgresql,
       SiPrisma,
     ],
+  },
+  {
+    nome: "ms-sync-transactions",
+    subtitle: "Microsserviço de sincronização de transações",
+    stack: "Backend",
+    foto: "/publicimgs/ms-transactions.jpeg",
+    descricao:
+      "Este microsserviço foi desenvolvido para atender às demandas de um aplicativo de gestão financeira, com o objetivo de automatizar o lançamento de movimentações bancárias na plataforma. A partir de extratos bancários, o serviço extrai de forma eficiente informações como valores, identificadores e demais dados das transações. Utilizando inteligência artificial, ele classifica automaticamente cada transação por tipo, categoria e uma descrição adequada, com base no perfil da movimentação.",
+    link: "https://next-food-hiago-dev.vercel.app/",
+    tecs: [FaJava, BiLogoSpringBoot, RiOpenaiFill, DiPostgresql, SiFlyway],
   },
   {
     nome: "DashB",
