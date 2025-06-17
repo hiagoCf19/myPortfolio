@@ -23,7 +23,7 @@ import {
 import { FaJava } from "react-icons/fa6";
 import { BiKey, BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import { PiGithubLogoFill } from "react-icons/pi";
-import { DiBitbucket, DiLaravel, DiMysql } from "react-icons/di";
+import { DiLaravel, DiMysql } from "react-icons/di";
 import { TbBrandNodejs, TbDeviceMobileCode } from "react-icons/tb";
 import { BsAndroid } from "react-icons/bs";
 
